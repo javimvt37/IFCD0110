@@ -124,22 +124,27 @@
         <link rel="stylesheet" href="css/estilos.css">
         <script type="text/javascript" src="js/funciones.js"></script>
 
-        <link rel="icon" type="image/png" href="img/imagen.png">
-        <link rel="icon" type="image/gif" href="img/imagen.gif">
-        <link rel="icon" type="image/vnd.microsoft.icon" href="img/imagen.ico"> 
+        <link rel="icon" type="image/png" href="img/html5.png">
+        <link rel="icon" type="image/gif" href="img/html5.gif">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico"> 
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
         
         <!--Etiqueta base, en este ejemplo indica mi direccion de la carpeta donde alojo imahgenes y asi me es mas comodo para no indicar siempre la direccion completa, solo escribir el nombre de la imagen-->
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
     </head>
     <body>
         <h1>Formato HTML</h1>
-        <p>El formato de texto, es el marcado que se aplica a un texto para añadirle datos de forma</p>
-        <p>Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido</p>
+        <hr>
+        <p>El formato de texto, es el marcado que se aplica a un texto para añadirle datos de forma. Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido.</p>
         <hr>
             <h2>Encabezados de texto</h2>
+            <!--el atributo aling ya no se usa en html5, con el style css float, dejamos la imagen flotando a la derecha-->
+            <img src="img/html-formatos-de-texto.png" alt="html formatos de texto" width="500px" style="float: right">
             <p>Los motores de búsqueda utilizan los encabezados para indexar la estructura y el contenido de sus páginas web.</p>
             <p>Los usuarios hojean las páginas por sus títulos. Es importante utilizar los encabezados para mostrar la estructura del documento.</p>
             <p>Los encabezados <code>&lt;h1&gt;</code>deben ser utilizados para los encabezados principales, seguido por encabezamientos <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, menos importantes y así sucesivamente.</p>
+            
 		
         <div class="nota">
             <p><b>Nota:</b> Usar encabezados HTML para sólo encabezados. No utilice encabezados para que el texto GRANDE o negrita.</p>
@@ -238,13 +243,13 @@
                             <td>Define un texto en superíndice</td>
                             <td>Este texto es <sup>superíndice</sup>de texto</td>
                             <td>Este texto es &lt;sup&gt;superíndice&lt;/sup&gt;</td>
-                        </tr>
+              </tr>
                     <tr>
                             <td>&lt;sub&gt;</td>
                             <td>Define un texto en subíndice</td>
                             <td>Este texto es <sub>subíndice</sub> de texto</td>
                             <td>Este texto es &lt;sub&gt;subíndice&lt;/sub&gt;</td>
-                        </tr>
+              </tr>
                         <tr>
                             <td>&lt;ins&gt;</td>
                             <td>Define un texto insertado "añadido o agregado".</td>
@@ -257,20 +262,20 @@
                                 <td>Define un texto tachado</td>
                                 <td><s>Este texto es un texto tachado</s></td>
                                 <td>&lt;s&gt;Este texto es un texto tachado&lt;/s&gt;</td>
-                            </tr>
+              </tr>
                         
                     <tr>
                                 <td>&lt;u&gt;</td>
                                 <td>Define un texto subrayadp</td>
                                 <td><u>Este texto esta subrayado</u></td>
                                 <td>&lt;u&gt;Este texto esta subrayado&lt;/u&gt;</td>
-                            </tr>
+              </tr>
                         <tr>
                                 <td>&lt;del&gt;</td>
                                 <td>Define un texto que ya ha sido eliminado o borrado</td>
                                 <td>Este texto está <del>tachado</del> eliminado</td>
                                 <td>Este texto está &lt;del&gt;tachado&lt;/del&gt; eliminado</td>
-                            </tr>
+              </tr>
                             <tr>
                         <td>&lt;mark&gt;</td>
                         <td>Define un texto marcado</td>
@@ -278,11 +283,11 @@
                         <td>&lt;mark&gt;Este texto está marcado&lt;/mark&gt;</td>
                     </tr>
                     
-                </table>
+    </table>
 		<div class="nota">
             <p><b>Nota:</b> Los navegadores muestran <code>&lt;strong&gt;</code> como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code> como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code>y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code>y <code>&lt;em&gt;</code>significa que el texto es "importante".
 
-                </p>
+          </p>
        </div>
          
           <hr>
@@ -326,7 +331,7 @@ Esto es un texto preformateado.</pre></td>
 </tr>
 		</table>
 		<br>
-		<div class="nota">
+	<div class="nota">
 			<p><b>Nota:</b> Utilice el elemento <code>&lt;pre&gt;</code> cuando quiera mostrar el texto con formato inusual, o algún tiop de código informático.</p>
 		</div>
           <hr>

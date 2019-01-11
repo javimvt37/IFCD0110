@@ -1,0 +1,250 @@
+
+
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>Curso diseño páginas web</title>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="title" content="Confección y publicación de páginas web">
+        <meta name="author" content="Javier Molina">
+
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                width: 80%;
+                /* margin arriba y abajo no tiene y derecha e izquierda en auto "se centra de la misma forma de iz y derecha, auqneu cambie de formato o tamaño" */
+                margin: 0 auto;
+                }
+
+            h1,h2,h3,h4,h5,h6{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* div{
+               /*  background-color: #f1f1f1; */
+               
+                /* Al poner dos numeros el primero es el margen de arriba y abajo y el segundo izq y derecha ejem: margin:10 5; */
+                /* margin: 20px;
+                padding: 20px;
+                } */
+                /*estilo para los div que contienene notas */
+            .nota{
+                background-color: #ffffcc;
+                border-left: 6px solid #ffeb3b;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+                
+                }
+            table, th, td {
+                border: 1px solid black;
+                 }
+            hr{
+                border: 1px solid #eee;
+                /* border-style: dotted; */
+                
+            }
+            code{
+                color:crimson;
+                background-color: #f1f1f1;
+                padding-left: 4px;
+                padding-right: 4px;
+                font-size: 110%;
+            }
+            /* Siempre en empieza en minuscula, sin espacions ni simbolos */
+            .etiquetasHTML{
+                background-color: #f1f1f1;
+                border: 1px solid #cccccc;
+                font-size: 24px;
+                padding: 16px;
+            }
+            /* Estilo anidado: etiquetas span dentro de code */
+            code span{
+                color:mediumblue;
+                }
+            code span span{
+                color:brown;
+            }
+            code span span span{
+                color:red;
+            }
+            .code{
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color: #fff;
+                /* 8px arriba y abajo y 12 derecha e izquierda */
+                padding: 8px 12px;
+                border-left: 4px dotted #4CAF50;
+                /* Seria color del texto */
+                color:black;
+            }
+            .ejemplo{
+                background-color: #f1f1f1;
+                padding: 8px 16px;
+                margin: 20px 0;
+                /* Caja sombreada; primero se especifican los lados donde sale la sombra, segundo rgba"a"alpha" por la transparencia"y por ultimo crea otra sombra superpuesta */
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            }
+        </style>
+        
+        <script></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script type="text/javascript" src="js/funciones.js"></script>
+
+        <link rel="icon" type="image/png" href="img/imagen.png">
+        <link rel="icon" type="image/gif" href="img/imagen.gif">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/imagen.ico"> 
+        
+        <!--Etiqueta base, en este ejemplo indica mi direccion de la carpeta donde alojo imahgenes y asi me es mas comodo para no indicar siempre la direccion completa, solo escribir el nombre de la imagen-->
+         <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
+    </head>
+    <body>
+        <h1>HTML Introducción</h1>
+        <hr>
+            <h2>¿Qué es HTML?</h2>
+                <p> HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
+        
+               <ul>
+                   <li>HTML significa Hyper Text Markup Language</li>
+                   <li>HTML describe la estructura de las páginas Web usando marcado</li>
+                   <li>Elementos HTML son los bloques de construcción de páginas HTML</li>
+                   <li>Elementos HTML están representados por etiquetas</li>
+                   <li>HTML etiquetas de la etiqueta de piezas de contenido como "mesa" "la partida", "párrafo", y así sucesivamente</li>
+                   <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página</li>
+                </ul>
+                <hr>
+            <h2>Estructura básica de un documento HTML</h2>
+                <div class="ejemplo">
+                    <h3>Ejemplo</h3>
+                    <div class="code">
+                        <code>
+                            <span>&lt;<span>!DOCTYPE <span>html</span></span> &gt;</span><br>
+                            <span>&lt;<span>html <span> lang="es-ES"</span></span>&gt;</span><br>
+                            <span>&lt;<span>head</span>&gt;</span><br>
+                            
+                            <!-- Estilo en linea -->
+                            <span>&lt;<span>title</span>&gt;<span style="color:black";>Page Title</span>&lt;<span>/title</span>&gt;</span><br>
+                            
+                            <span>&lt;<span>meta <span>charset="utf-8"</span></span>&gt;</span><br>
+                            <span>&lt;<span>/head</span>&gt;</span><br>
+                            <span>&lt;<span>body</span>&gt;</span><br>
+                            
+                            <span>&lt;<span>h1</span>&gt;<span style="color:black";>Mi primer encabezado</span>&lt;<span>/h1</span>&gt;</span><br>
+                            <span>&lt;<span>p</span>&gt;<span style="color:black">Mi primer párrafo</span>&lt;<span>/p</span>&gt;</span><br>
+                            
+                            <span>&lt;<span>/body</span>&gt;</span><br>
+                            <span>&lt;<span>/html</span>&gt;</span><br>
+                        </code>
+                    </div>
+                </div>
+
+                
+                        <h3>Ejemplo de las etiquetas básicas</h3>
+                        <ol>
+                            <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define este documento para ser HTML5.</li>
+                            <li>La etiqueta <code>&lt;html&gt;</code> es el elemento raíz de una página HTML.</li>
+                            <li>El atributo <code>lang="es-ES"</code> especifica el idioma-país del documento y va dentro de la etiqueta <code>&lt;html&gt;.</code></li>
+                            <li>La etiqueta <code>&lt;head&gt;</code> contiene información de metadatos sobre el documento.</li>
+                            <li>La etiqueta <code>&lt;meta charset="UTF-8"&gt;</code> define la codificación de caracteres.</li>
+                            <li>La etiqueta <code>&lt;title&gt;</code> especifica un título para el documento.</li>
+                            <li>La etiqueta <code>&lt;body&gt;</code> contiene el contenido de la página visible.</li>
+                            <li>La etiqueta <code>&lt;h1&gt;</code> define un gran encabezado.</li>
+                            <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo.</li>
+                        </ol>
+            
+                <hr>
+                
+                    <h4>Etiquetas HTML</h4>
+                    <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
+                    <div class="etiquetasHTML">
+                        
+                       <p><b>&lt;Nombre de etiqueta&gt;</b> contenido va aquí ... <b>&lt;/Nombre de etiqueta&gt;</b></p>
+
+                    </div>
+
+                    <dl>
+                        <dt><b>Etiquetas HTML</b></dt>
+                        <dd>Normalmente vienen en pares como <code>&lt;p&gt;</code> y <code>&lt;/p&gt;</code>. </dd>
+                        
+                        <dt><b>Etiquetas HTML</b></dt>
+                        <dd>Están formadas por una etiqueta de inicio y una etiqueta de fin.</dd>
+
+                        <dt><b>La etiqueta final</b></dt>
+                        <dd>Se escribe igual que la etiqueta de inicio, pero con una barra inclinada insertada antes del nombre de la etiqueta.</dd>
+                    </dl>
+                    <!-- Aplicamos el estilo .nota con el atributo clase -->
+                    <div class="nota">
+                        <p>Consejo: La etiqueta de inicio también se llama etiqueta de apertura y la etiqueta final como etiqueta de cierre.</p>
+                    </div>
+            
+                <div>
+                    <h5>Navegadores web</h5>
+                    <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br>
+                    El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
+                    <img src="img/img_chrome.png" alt="imagen navegador Chrome" width="635" height="361"><!--el atributo alt sirve para seo y accesibilidad-->
+                </div>
+                <hr>
+                <div>
+                    <h6>Versiones de HTML</h6>
+                    <p>Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
+                    <table>
+                        <tr>
+                            <th>Version</th>
+                            <th>Year</th>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>1991</td>
+                        </tr>
+                        <tr>
+                            <td>HTML2.0</td>
+                            <td>1995</td>
+                        </tr>
+                        <tr>
+                            <td>HTML3.2</td>
+                            <td>1997</td>
+                        </tr>
+                        <tr>
+                            <td>HTML4.01</td>
+                            <td>1999</td>
+                        </tr>
+                        <tr>
+                            <td>XHTML</td>
+                            <td>2000</td>
+                        </tr>
+                        <tr>
+                            <td>HTML5</td>
+                            <td>2014</td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
+                    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+                    </div>
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;meta charset="UTF 8"&gt;
+                    </div>
+                    &lt;/head&gt;
+                    </div>
+                    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+                    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+                    </div>
+                    &lt;/body&gt;
+                    </div>
+                    &lt;/html&gt;
+                    </div>
+                    
+
+        <div class="nota">
+            <p>Nota: Sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (el área blanca arriba) se muestra en un navegador.</p>
+        </div>
+        <hr>
+        </body>
+</html>

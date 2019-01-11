@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>Etiquetas que dan formato al texto</title>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="title" content="Confección y publicación de páginas web">
+        <meta name="author" content="Javier Molina">
+
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                width: 80%;
+                /* margin arriba y abajo no tiene y derecha e izquierda en auto "se centra de la misma forma de iz y derecha, auqneu cambie de formato o tamaño" */
+                margin: 0 auto;
+                }
+
+            h1,h2,h3,h4,h5,h6{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* div{
+               /*  background-color: #f1f1f1; */
+               
+                /* Al poner dos numeros el primero es el margen de arriba y abajo y el segundo izq y derecha ejem: margin:10 5; */
+                /* margin: 20px;
+                padding: 20px;
+                } */
+                /*estilo para los div que contienene notas */
+            .nota{
+                background-color: #ffffcc;
+                border-left: 6px solid #ffeb3b;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+                
+                }
+            /* table, th, td {
+                background-color: #cccccc;
+                
+                 } */
+            table{
+                font-family: Arial, Helvetica, sans-serif;
+                
+                /* De esta forma no me crea doble linea */
+                border-collapse: collapse;
+
+                width: 100%;
+            }
+            td,th{
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+			
+		
+            /* Para que me pinte una linea gris, otra no en la tabla */
+            tr:nth-child(even){
+                background-color: #cccccc;
+            }
+			
+
+            /* Solo aplica los encabezados dentro de las tablas */
+            table h1,h2,h3,h4,h5,h6{
+                margin: 0;
+            }
+
+            hr{
+                border: 1px solid #eee;
+                /* border-style: dotted; */
+                
+            }
+            
+            code{
+                color:crimson;
+                background-color: #f1f1f1;
+                padding-left: 4px;
+                padding-right: 4px;
+                font-size: 110%;
+            }
+			
+            /* Siempre en empieza en minuscula, sin espacions ni simbolos */
+            .etiquetasHTML{
+                background-color: #f1f1f1;
+                border: 1px solid #cccccc;
+                font-size: 24px;
+                padding: 16px;
+            }
+            /* Estilo anidado: etiquetas span dentro de code */
+            code span{
+                color:mediumblue;
+                }
+            code span span{
+                color:brown;
+            }
+            code span span span{
+                color:red;
+            }
+            .code{
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color: #fff;
+                /* 8px arriba y abajo y 12 derecha e izquierda */
+                padding: 8px 12px;
+                border-left: 4px dotted #4CAF50;
+                /* Seria color del texto */
+                color:black;
+            }
+			.cite{
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color: #fff;
+                /* 8px arriba y abajo y 12 derecha e izquierda */
+                padding: 8px 12px;
+                border-left: 4px dotted #20ACB8;
+                /* Seria color del texto */
+                color:black;
+            }
+            .ejemplo{
+                background-color: #f1f1f1;
+                padding: 8px 16px;
+                margin: 20px 0;
+                /* Caja sombreada; primero se especifican los lados donde sale la sombra, segundo rgba"a"alpha" por la transparencia"y por ultimo crea otra sombra superpuesta */
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            }
+			.blockquote{
+				margin-bottom: 0px;
+				margin-top: 0px;
+			}
+			
+			/*Hace que al pasar opr la tabla cambie al color de fondo elegido*/
+			tr:hover{
+				background-color: aquamarine;
+			}
+			span{
+				padding: 2px 5px;
+				margin: 2px;
+				/*font-size: 87.5%;*/
+				color: #212529;
+				background-color: white;
+				/* redondea los bordes*/
+				border-radius: 0.3rem;
+	
+			}
+			kbd{
+				padding: 2px 5px;
+				margin: 2px;
+				/*font-size: 87.5%;*/
+				color: white;
+				background-color: black;
+				/* redondea los bordes*/
+				border-radius: 0.3rem;
+			}
+
+        </style>
+        
+        <script></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script type="text/javascript" src="js/funciones.js"></script>
+
+        <link rel="icon" type="image/png" href="img/html5.png">
+        <link rel="icon" type="image/gif" href="img/html5.gif">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico"> 
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        
+        <!--Etiqueta base, en este ejemplo indica mi direccion de la carpeta donde alojo imahgenes y asi me es mas comodo para no indicar siempre la direccion completa, solo escribir el nombre de la imagen-->
+         <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
+    </head>
+    <body>
+        <h1>HTML Bloques</h1>
+        <hr>
+       
+            <h2>Etiquetas que citan los textos</h2>
+		<p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden propocionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atribute <code>title</code> para definir de la abreviación.</p>
+		<p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como un libro, una película,  un programa de televisión o una canción, no el nombre de una persona.</p>
+		<p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
+		<p>La etiqeuta de marcado <code>&lt;q&gt;</code> define una cita corta en línea. Marca las citas a otros autores o documentos. Genera automáticamente comillas alrededor del contenido.</p>
+		<p>La etiqueta de marcado <code>&lt;dfn&gt;</code> define un término y debe contener el atributo <code>title</code> para la definicion/explicación del término dentro.</p>
+
+		
+       <br>
+
+            <table>
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                    <th>Utilización</th>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Define una abreviatura</td>
+					<td>Esto es un texto abreviado: <abbr title="HyperText Markup Language">HTML</abbr></td>
+                    <td>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;q&gt;</td>
+                    <td>Define una breve cita</td>
+					<td><q>Esto es una breve cita</q></td>
+                    <td>&lt;q&gt;Esto es una breve cita&lt;/q&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Define una cita de otra fuente</td>
+					<td><blockquote class="blockquote">Este texto es de otra fuente</blockquote></td>
+                    <td>&lt;blockquote&gt;Este texto es de otra fuente&lt;/blockquote&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;cite&gt;</td>
+                    <td>Define el titulo de una obra.</td>
+					<td><cite>Este texto es un texto citado</cite></td>
+                    <td>&lt;cite&gt;Este texto es un texto citado&lt;/cite&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;dfn&gt;</td>
+                    <td>Define un término.</td>
+					<td>Esto es un término <dfn title="HyperText Markup Language">HTML</dfn></td>
+                    <td>Esto es un término &lt;dfn title="HyperText Markup Language"&gt;HTML&lt;/dfn&gt;</td>
+                </tr>
+                
+            </table>
+        <br>
+        
+	<div style="background-color: #EDEDED; padding: 25px;">
+		<h3>Ejemplo de uso</h3>
+			<div class="code">
+				
+				<p><!-- <dfn> define tambien para el navegador la etiqueta <abbr> por eso no me hace falta incorporarle en <dfn> el atributo title-->
+					<strong>EL LENGUAJE <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn></strong>
+				</p>
+				<blockquote>
+				<p>Como <strong>Tim Berners-Lee</strong>, el padre de la Web, escribió en <cite>Tejiendo la Web</cite>: <q>Yo llegué justo, interesado, cuando el hipertexto e internet habían visto ya la luz. La tarea que me correspondía era hacer que casaran</q>.</p></blockquote>
+			</div>
+			<div class="cite">
+			<p>
+					<strong>CODIGO <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn></strong>
+				</p><blockquote><small>
+				<!--line-height, atributo de alto de linea-->
+				<p style="line-height: 20px;">&lt;p&gt;
+&lt;strong&gt;EL LENGUAJE &lt;dfn&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt;&lt;/strong&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+				&lt;p&gt;Como &lt;strong&gt;Tim Berners-Lee&lt;/strong&gt;, el padre de la Web, escribió en &lt;cite&gt;Tejiendo la Web&lt;/cite&gt;: &lt;q&gt;Yo llegué justo, interesado, cuando el hipertexto e internet habían visto ya la luz. La tarea que me correspondía era hacer que casaran&lt;/q&gt;.&lt;/p&gt;&lt;/blockquote&gt;</p></small></blockquote>
+				</div>
+		</div>
+       
+        <br>
+          <div class="nota">
+          	<p>
+          		<b>Nota:</b> Por defecto <code>&lt;blockquote&gt;</code> incluye un margen izquierdo cuando se visualiza. Esta característica se usó de forma incorrecta en el pasado para lograr una sangría en el texto. Sin embargo, para ello se debe emplear la propiedad margin-left de CSS.
+          	</p>
+          </div>
+          <hr>
+           
+           <h2>Elementos HTML que agrupan el texto</h2>
+            <p>El elemento <code>&lt;div&gt;</code> se utiliza a menudo como un contenedor para otros elementos HTML. El elemento <code>&#8249;div&gt;</code> tiene atributos, pero no son necesarios, los más comunes son style, class y id. Cuando se utiliza junto con CSS, el elemento &lt;div&gt; puede ser utilizado con el estilo de bloques de contenido:</p>
+            
+            <p>La etiqueta <code>&lt;span&gt;</code> se utiliza como un contenedor para agrupar un texto en línea. El elemento <code>&lt;span&gt;</code> también tiene atributos pero tampoco son necesarios, los mas comunes son style, class y id para dar estilos. Cuando se utiliza junto con CSS, el <code>&lt;span&gt;</code> elemento puede ser utilizado para piezas de estilo del texto:</p>
+          
+            
+            <table>
+                    <tr>
+                        <th>Etiqueta</th>
+                        <th>Descripción</th>
+                        <th>Ejemplo</th>
+                        <th>Utilización</th>
+                    </tr>
+				
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Define una división del contenido (en bloque)</td>
+						<td><div style="border:1px solid green">Esto es un elemento de bloque</div></td>
+                        <td>&lt;div&gt;Esto es un elemento de bloque&lt;/div&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Define una sección de un documento (en línea)</td>
+                        <td>Esto es un <span style="border:1px solid green; border-radius: 0;">elemento de línea</span></td>
+                        <td>Esto es un &lt;span&gt;elemento de línea&lt;/span&gt;</td>
+                    </tr>
+                    </table>
+                    <br>
+                    <!-- Con el estilo aplicado overflow, le indicamos que no se pliegue-->
+                    
+		<div style="background-color: #EDEDED; padding: 25px;"><h3>Ejemplos de uso</h3>
+                 	<div class="cite">
+                 		<p><strong>Elementos DIV -SPAN</strong></p>
+                 		<div style="border:1px solid black; margin:10px 15px 10 px 15px;">
+							<div style="background-color: orange; padding: 5px;">
+                			<span>HTML</span> <span>lenguaje de marcas de hipertexto</span> <span>se utiliza para el desarrollo de páginas web.</span></div>
+                 			<div style="background-color: mediumseagreen; padding: 5px;">
+               				  <span>CSS</span> <span>hojas de estilo en cascada</span> <span>se utiliza para definir y crear la presentación HTML.</span>
+                 			</div>
+                 			<div style="background-color: yellow; padding: 5px;">
+               				  <span>JavaScript</span> <span>lenguaje de programación</span> <span>se utiliza para dar dinamismo a las páginas web.</span>
+                 			</div>
+                 		</div>
+                 	</div>
+                 	<div class="code">
+						<p><strong>Código <abbr title="HyperText Markup Language">HTML</abbr></strong></p>
+        					<blockquote>
+								<p  style="line-height: 20px;"><small>&lt;div&gt;&lt;div&gt;&lt;span&gt;HTML&lt;/span&gt; &lt;span&gt;lenguaje de marcas de hipertexto&lt;/span&gt; &lt;span&gt;se utiliza para el desarrollo de páginas web.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;CSS&lt;/span&gt; &lt;span&gt;hojas de estilo en cascada&lt;/span&gt; &lt;span&gt;se utiliza para definir y crear la presentación HTML.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;JavaScript&lt;/span&gt; &lt;span&gt;lenguaje de programación&lt;/span&gt; &lt;span&gt;se utiliza para dar dinamismo a las páginas web.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;</small></p></blockquote>
+          </div>
+    </div>   
+                    
+             <br>
+                    
+                    
+                    
+                    
+		<div class="nota">
+            <p><b>Nota:</b> Un elemento en bloque siempre empieza en una línea nueva y ocupa todo el ancho disponible (se extiende hacia la izquierda y a la derecha tanto como sea posible). Un elemento en línea no se inicia en una nueva línea, sólo ocupa el mismo ancho que sea necesario.</p>
+       </div>
+       
+       <hr>
+       <br>
+		<h2>Etiquetas de código de computadora</h2>
+      <ul>
+		  <li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador.</li>
+		  <li>La etiqueta <code>&lt;kbd&gt;</code> representa comandos de netrada del usuario.</li>
+		  <li>La etiqueta <code>&lt;samp&gt;</code> representa la salida de un programa o sistema informático.</li>
+		  <li>La etiqueta <code>&lt;var&gt;</code> se utiliza cp,p expresión matemática o variable de la programación.</li>
+      </ul>
+      
+		<table>
+			<tr>
+				<th>Etiqueta</th>
+				<th>Descripción</th>
+				<th>Visualización</th>
+				<th>Utilización</th>
+			</tr>
+			<tr>
+				<td>&lt;code&gt;</td>
+				<td>Define un código de programación</td>
+				<td>Usar este código <code>function(maim)</code></td>
+				<td>Usar este código &lt;code&gt;function(maim)&lt;/code&gt;</td>
+			</tr>
+			<tr>
+			  <td>&lt;kbd&gt;</td>
+			  <td>Define una entrada de teclado</td>
+			  <td>Para guardar <kbd>Ctrl</kbd>+<kbd>S</kbd></td>
+				<td>Para guardar &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;S&lt;/kbd&gt;</td>
+			</tr>
+			<tr>
+				<td>&lt;samp&gt;</td>
+				<td>Define la salida de la computadora</td>
+				<td><samp>Error: página no encontrada</samp></td>
+				<td>&lt;samp&gt;Error: página no encontrada&lt;/samp&gt;</td>
+			</tr>
+			<tr>
+				<td>&lt;var&gt;</td>
+				<td>Define una variable aritmética</td>
+				<td>Einstein escribió: <var>E</var> = <var>mc2</var></td>
+				<td>Einstein escribió: &lt;var&gt;E&lt;/var&gt; = &lt;var&gt;mc2&lt;/var&gt;</td>
+			</tr>
+		</table> 
+      <br>
+       <div class="nota">
+		   <p><b>Nota:</b> Las etiquetas de código de computadora cambian el tipo de letra simulando código informático</p>
+		</div>
+       <br>
+        <div style="overflow: hidden; margin:  0 auto; width: 80%; border: 1px solid red">
+                   	<!--Siempre que se folte has de dar un ancho-->
+                    	<div style="float: left; width:  33.33%;  background-color: lightblue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laudantium pariatur autem explicabo aliquid veritatis, repellat eligendi reiciendis quidem incidunt reprehenderit asperiores a totam ab quo placeat officiis expedita aliquam.</div>
+                    	
+                    	<div style="float: left; width:  33.33%; background-color: lightgreen;">Soluta et tenetur a quidem, blanditiis est mollitia rerum aut, fuga, perspiciatis autem eveniet! Asperiores maiores eaque recusandae alias architecto, ea molestias illo accusantium ipsa quia quae maxime est vel.</div>
+                    	
+                    	<div style="float: left; width:  33.33%; background-color: lightblue;">Quia architecto laborum commodi nam consequuntur maiores eum cupiditate corporis ratione, perferendis deleniti veniam! Cum, tempore, molestias debitis quibusdam commodi voluptatem non earum adipisci. Perspiciatis eligendi, sunt reprehenderit libero repellendus.</div>
+                    </div>
+         
+          <hr>
+           <div style="overflow: hidden; margin:  0 auto; width: 80%; border:1px solid red;">
+                    	<div style="float: left; width:  33.33%; background-color:  aqua;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia laudantium pariatur autem explicabo aliquid veritatis, repellat eligendi reiciendis quidem incidunt reprehenderit asperiores a totam ab quo placeat officiis expedita aliquam.</div>
+                    	
+                    	<div style="float: left; width:  33.33%; background-color:  bisque; ">Soluta et tenetur a quidem, blanditiis est mollitia rerum aut, fuga, perspiciatis autem eveniet! Asperiores maiores eaque recusandae alias architecto, ea molestias illo accusantium ipsa quia quae maxime est vel.</div>
+                    	
+                    	<div style="float: left; width:  33.33%; background-color:  darkseagreen; ">Quia architecto laborum commodi nam consequuntur maiores eum cupiditate corporis ratione, perferendis deleniti veniam! Cum, tempore, molestias debitis quibusdam commodi voluptatem non earum adipisci. Perspiciatis eligendi, sunt reprehenderit libero repellendus.</div>
+                    </div>
+		<h2>Etiquetas que separan el texto</h2>
+         
+		<p>La etiqueta <code>&lt;p&gt;</code> separa el texto, añadiendo automáticamente un espacio (margen) antes y después de cada elemento <code>&lt;p&gt;</code>. El navegador eliminará todos los espacios en blanco y las líneas adicionales cuando se visualiza la etiqueta <code>&lt;p&gt;</code>.</p>
+		<p>La etiqueta <code>&lt;br&gt;</code> es una etiqueta vacía, lo que significa que no tiene etiqueta final. Inserta un salto de línea (una nueva línea) sin comenzar un nuevo párrafo.</p>
+		<p>Un texto dentro de una etiqueta <code>&lt;pre&gt;</code> se muestra en una fuente de ancho fijo (generalmente Courier), y conserva ambos espacios y saltos de línea.</p>
+		<table>
+			<tr>
+				<th>Etiqueta</th>
+				<th>Descripción</th>
+				<th>Visualización</th>
+				<th>Utilización</th>
+			</tr>
+			<tr>
+				<td>&lt;p&gt;</td>
+				<td>Define un párrafo de texto</td>
+				<td><p>Esto es un párrafo de texto.</p>
+				<p>Esto es un párrafo de texto.</p></td>
+				<td>&lt;p&gt;Esto es un párrafo de texto.&lt;/p&gt;
+				&lt;p&gt;Esto es un párrafo de texto.&lt;/p&gt;</td>
+			</tr>
+			<tr>
+				<td>&lt;br&gt;</td>
+				<td>Define un salto de línea.</td>
+				<td>Esto es un salto de línea.<br>
+				<br>
+				Esto es un salto de línea.<br></td>
+				<td>Esto es un salto de línea.&lt;br&gt;
+				&lt;br&gt;
+				Esto es un salto de línea.&lt;br&gt;</td>
+			</tr>
+<tr>
+	<td>&lt;pre&gt;</td>
+	<td>Define un texto preformateado</td>
+	<td><pre>Esto es un texto preformateado.
+Esto es un texto preformateado.</pre></td>
+	<td>&lt;pre&gt;Esto es un texto preformateado.
+	Esto es un texto preformateado&lt;/pre&gt;</td>
+</tr>
+		</table>
+		<br>
+	<div class="nota">
+			<p><b>Nota:</b> Utilice el elemento <code>&lt;pre&gt;</code> cuando quiera mostrar el texto con formato inusual, o algún tiop de código informático.</p>
+		</div>
+          <hr>
+           
+            <h2><small>Ejemplo de uso</small></h2>
+            <p><strong><mark>Texto en negrita y resaltado</mark></strong></p>
+            <hr>
+            <p><strong>Teoría </strong>de la relatividad: <em>E=MC<sup>2</sup></em><br>
+            <em>Molécula </em>del <strong>agua</strong>: H<sub>2</sub>O</p>
+            <hr>
+            <p><strong>HTML</strong> (<i><b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</i>)<br>
+            El lenguaje de marcado <s>marcas</s> (<ins>etiquetas</ins>) de Hypertexto.<br>
+            <strong>W3C</strong> (<i><b>W</b>orld  <b>W</b>ide <b>W</b>eb</i>)</p>
+        
+    </body>
+</html>
