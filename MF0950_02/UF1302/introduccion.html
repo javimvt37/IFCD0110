@@ -102,9 +102,21 @@
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
     </head>
     <body>
-        <h1>HTML Introducción</h1>
+        <h1 id="intro">HTML Introducción</h1>
         <hr>
-            <h2>¿Qué es HTML?</h2>
+		<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
+        <hr>
+        <ul>
+			<li><a href="#queeshtml">¿Qué es HTML?</a></li>
+			<li><a href="#estructura">Estructura básica de un documento HTML</a></li>
+			<li><a href="#ej">Ejemplo de las etiquetas básicas</a></li>
+			<li><a href="#etiquetas">Etiquetas HTML</a></li>
+			<li><a href="#navegadores">Navegadores web</a></li>
+			<li><a href="#versiones">Versiones de HTML</a></li>
+			<li><a href="#estructurados">Estructura de una página HTML</a></li>
+		</ul>
+        <hr>
+            <h2 id="queeshtml">¿Qué es HTML?</h2>
                 <p> HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
         
                <ul>
@@ -115,8 +127,9 @@
                    <li>HTML etiquetas de la etiqueta de piezas de contenido como "mesa" "la partida", "párrafo", y así sucesivamente</li>
                    <li>Los navegadores no muestran las etiquetas HTML, pero las usan para representar el contenido de la página</li>
                 </ul>
+		<p><a href="#intro">Volver a inicio</a></p>
                 <hr>
-            <h2>Estructura básica de un documento HTML</h2>
+            <h2 id="estructura">Estructura básica de un documento HTML</h2>
                 <div class="ejemplo">
                     <h3>Ejemplo</h3>
                     <div class="code">
@@ -126,13 +139,13 @@
                             <span>&lt;<span>head</span>&gt;</span><br>
                             
                             <!-- Estilo en linea -->
-                            <span>&lt;<span>title</span>&gt;<span style="color:black";>Page Title</span>&lt;<span>/title</span>&gt;</span><br>
+                            <span>&lt;<span>title</span>&gt;<span> style="color:black";>Page Title</span>&lt;<span>/title</span>&gt;</span><br>
                             
                             <span>&lt;<span>meta <span>charset="utf-8"</span></span>&gt;</span><br>
                             <span>&lt;<span>/head</span>&gt;</span><br>
                             <span>&lt;<span>body</span>&gt;</span><br>
                             
-                            <span>&lt;<span>h1</span>&gt;<span style="color:black";>Mi primer encabezado</span>&lt;<span>/h1</span>&gt;</span><br>
+                            <span>&lt;<span>h1</span>&gt;<span style="color:black;">Mi primer encabezado</span>&lt;<span>/h1</span>&gt;</span><br>
                             <span>&lt;<span>p</span>&gt;<span style="color:black">Mi primer párrafo</span>&lt;<span>/p</span>&gt;</span><br>
                             
                             <span>&lt;<span>/body</span>&gt;</span><br>
@@ -140,9 +153,10 @@
                         </code>
                     </div>
                 </div>
-
                 
-                        <h3>Ejemplo de las etiquetas básicas</h3>
+<p><a href="#intro">Volver a inicio</a></p>
+                
+                        <h3 id="ej">Ejemplo de las etiquetas básicas</h3>
                         <ol>
                             <li>La etiqueta <code>&lt;!DOCTYPE html&gt;</code> define este documento para ser HTML5.</li>
                             <li>La etiqueta <code>&lt;html&gt;</code> es el elemento raíz de una página HTML.</li>
@@ -154,10 +168,10 @@
                             <li>La etiqueta <code>&lt;h1&gt;</code> define un gran encabezado.</li>
                             <li>La etiqueta <code>&lt;p&gt;</code> define un párrafo.</li>
                         </ol>
-            
+            <p><a href="#intro">Volver a inicio</a></p>
                 <hr>
                 
-                    <h4>Etiquetas HTML</h4>
+                    <h4 id="etiquetas">Etiquetas HTML</h4>
                     <p>Las etiquetas HTML son los nombres de elementos entre paréntesis angulares:</p>
                     <div class="etiquetasHTML">
                         
@@ -179,16 +193,17 @@
                     <div class="nota">
                         <p>Consejo: La etiqueta de inicio también se llama etiqueta de apertura y la etiqueta final como etiqueta de cierre.</p>
                     </div>
-            
+            	<p><a href="#intro">Volver a inicio</a></p>
                 <div>
-                    <h5>Navegadores web</h5>
+                    <h5 id="navegadores">Navegadores web</h5>
                     <p>El propósito de un navegador web (Chrome, IE, Firefox, Safari) es leer los documentos HTML y mostrarlos.<br>
                     El navegador no muestra las etiquetas HTML, pero los utiliza para determinar cómo mostrar el documento:</p>
                     <img src="img/img_chrome.png" alt="imagen navegador Chrome" width="635" height="361"><!--el atributo alt sirve para seo y accesibilidad-->
                 </div>
                 <hr>
                 <div>
-                    <h6>Versiones de HTML</h6>
+                   <p><a href="#intro">Volver a inicio</a></p>
+                    <h6 id="versiones">Versiones de HTML</h6>
                     <p>Desde los primeros días de la web, ha habido muchas versiones de HTML:</p>
                     <table>
                         <tr>
@@ -221,7 +236,9 @@
                         </tr>
                     </table>
                 </div>
+                <p><a href="#intro">Volver a inicio</a></p>
                 <hr>
+		<h2 id="estructurados">Estructura de una página HTML</h2>
                 <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
                     <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
                     <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
@@ -245,6 +262,7 @@
         <div class="nota">
             <p>Nota: Sólo el contenido dentro de la sección <code>&lt;body&gt;</code> (el área blanca arriba) se muestra en un navegador.</p>
         </div>
+        <p><a href="#intro">Volver a inicio</a></p>
         <hr>
         </body>
 </html>
