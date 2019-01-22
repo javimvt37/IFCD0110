@@ -13,11 +13,14 @@
 
         <style>
             body{
+				
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                width: 80%;
+				width: 80%;
+                
                 /* margin arriba y abajo no tiene y derecha e izquierda en auto "se centra de la misma forma de iz y derecha, auqneu cambie de formato o tamaño" */
                 margin: 0 auto;
                 }
+			
 
             h1,h2,h3,h4,h5,h6{
                 font-family: Arial, Helvetica, sans-serif;
@@ -40,7 +43,7 @@
                 
                 }
             table, th, td {
-                border: 1px solid black;
+               
                 padding: 15px; 
 				margin: 15px; }
             hr{
@@ -91,9 +94,36 @@
             }
 			table{
 				border-collapse: collapse;
+				border: none;
 				
 			}
+			div img:hover{
+					box-shadow: 5px 5px 10px #ffdacc;
+					width: 120%;
+				}
+			a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
 			
+a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+				}
 			
         </style>
         
@@ -109,27 +139,23 @@
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
     </head>
     <body>
-    <table width="100%">
-    	<tr>
-    		<td width="128px"><a href="index.html" style="text-align: center"><img src="img/HTML5_Logo_128.png" alt="Logo html5" width="128px" height="128" title="Inicio de la página"></a></td>
-    		<td>sdfsdfsdf</td>
-    	</tr>
-    </table>
+   
     <br>
     <div style="overflow: hidden">
-		<div style="border: 2px solid black; width: 126px; float: left;"><a href="index.html" style="text-align: center"><img src="img/HTML5_Logo_128.png" alt="Logo html5" width="128px" height="128" title="Inicio de la página"></a></div>
-		<div style="border: 2px solid black; float: left;"><h2>Lenguaje de marcas</h2><a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a></div>
+		<div style=" width: 126px; float: left;"><a href="index.html" style="text-align: center"><img src="img/HTML5_Logo_128.png" alt="Logo html5" width="128px" height="128" title="Inicio de la página"></a></div>
+		<div style="float: left;"><h1>Lenguaje de marcas</h1></div>
 		</div>     
-        <h1 id="intro">Índice</h1>
+        
         <hr>
 		<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
         <hr>
         <div style="overflow: hidden; width: 100%;">
-			<div style="float:left; width: 20%; " ><a href="introduccion.html"><img src="img/index/html5demos.png" alt="introducción">Introducción</a> </div>
-        	<div style="float:left;  width: 20%; "><a href="formato.html"><img src="img/index/html5-jp.png" alt="formato">Formato</a> </div>
-        	<div style="float:left;  width: 20%;"><a href="bloques.html"><img src="img/index/jsdoit_en.png" alt="bloques">Bloques</a> </div>
-        	<div style="float:left;  width: 20%; "><a href="tablas.html"><img src="img/index/sencha.png" alt="tabla">Tablas</a> </div>
-        	<div style="float:left; width: 20%; "><a href="listas.html"><img src="img/index/youtube-html5.jpg" alt="listas">Listas</a> </div>
+		  <div style="float:left; width: 150px; margin: 20px;text-align: center; " margin: 20px;text-align: center ><a href="introduccion.html"><img src="img/index/html5demos.png" alt="introducción" width="99.99%" >Introducción</a> </div>
+       	  <div style="float:left;  width: 150px; margin: 20px;text-align: center "><a href="formato.html"><img src="img/index/html5-jp.png" alt="formato" width="99.99%">Formato</a> </div>
+       	  <div style="float:left;  width: 150px; margin: 20px;text-align: center"><a href="bloques.html"><img src="img/index/jsdoit_en.png" alt="bloques" width="99.99%"><br>Bloques</a> </div>
+       	  <div style="float:left;  width: 150px; margin: 20px;text-align: center "><a href="tablas.html"><img src="img/index/sencha.png" alt="tabla" width="99.99%"><br>Tablas</a> </div>
+        	<div style="float:left; width: 150px; margin: 20px;text-align: center"><a href="listas.html"><img src="img/index/youtube-html5.jpg" alt="listas" width="99.99%"><br>
+       	    Listas</a> </div>
         </div>
         <hr>
         <br>
@@ -143,5 +169,6 @@
         	</tr>
         </table>
        <br><br>
+       
         </body>
 </html>

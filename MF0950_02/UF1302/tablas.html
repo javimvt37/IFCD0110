@@ -187,6 +187,37 @@
 			samp{
 				font-size: 110%;
 			}
+			footer{
+				
+				border:5px solid #EB8166;
+				border-radius: 10px;
+				background-color: #F0A490;
+				box-shadow: 5px 5px 5px #E34c26;			
+				
+			}
+			a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: #DD4C4E;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
         </style>
         
         <script></script>
@@ -203,8 +234,15 @@
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
     </head>
     <body>
+       <header>
         <h1 id="intro">HTML Tablas</h1>
         <hr>
+		</header>
+		<nav>
+	<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a>
+        <hr>
+		</nav>
+       <aside>
         <ul>
         	<li><a href="#definen">Etiquetas que definen una tabla</a></li>
         	<li><a href="#scope">El atributo scope</a></li>
@@ -213,9 +251,10 @@
         	<li><a href="#agrupacion">Agrupación por filas</a></li>
         </ul>
         <hr>
-		<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
-        <hr>
-       
+		</aside>
+		
+      <main>
+       <article>
             <h2 id="definen">Etiquetas que definen una tabla</h2>
 		<p>Una tabla HTML se define con la <code>&lt;table&gt;</code> etiqueta.</p>
 
@@ -273,6 +312,8 @@
             </table>
          <p><a href="#intro">Volver a inicio</a></p>
         <hr>
+		  </article>
+		  <article>
 		<h2 id="scope">El atributo scope</h2>
     <p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado.El atributo scope especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
         
@@ -367,6 +408,8 @@
           <p><br>
           </p>
            <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+       <article>
         <h2 id="colspan">El atributo colspan y rowspan</h2>
    <p>El atributo colspan define el número de columnas de una célula debe ocupar. El atributo rowspan especifica el número de filas de una célula debe ocupar.</p>
    <br>
@@ -460,6 +503,8 @@
    
     <p><a href="#intro">Volver a inicio</a></p>
    <hr>
+		  </article>
+		  <article>
    <h2 id="colgroup">El atributo colgroup y col</h2>
    <p>La etiqueta <code>&lt;colgroup&gt;</code> especifica un grupo de una o más columnas en una tabla para el formato. La etiqueta <code>&lt;colgroup&gt;</code> es útil para la aplicación de estilos para columnas completas, en lugar de repetir los estilos para cada célula, para cada fila.</p>
 		<p>La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna dentro de un <code>&lt;colgroup&gt;</code> La etiqueta <code>&lt;col&gt;</code> especifica las propiedades de columna para cada columna dentro de un <code>&lt;colgroup&gt;</code> elemento.
@@ -584,6 +629,8 @@ La etiqueta <code>&lt;col&gt;</code> es útil para la aplicación de estilos par
   
          <p><a href="#intro">Volver a inicio</a></p>
        <hr>
+		  </article>
+		  <article>
 		<h2 id="agrupacion">Agrupación por filas</h2>
 		<p>HTML provee tres elementos que pueden ayudar a los autores a organizar la información presentada en una tabla. Éstos son: thead, para agrupar las filas que presentan información de encabezado; tfoot para contener a la filas que representan un pie o resumen; y body, para representar un bloque de filas que consiste en un cuerpo de datos.</p>
 
@@ -854,5 +901,15 @@ La etiqueta <code>&lt;col&gt;</code> es útil para la aplicación de estilos par
     </table>
 		<p>&nbsp;</p>
 		 <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		</main>
+		 <footer>
+			<ul style="list-style-type: none;">
+				<li><a href="#">Política de cookies</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li><a href="#">Aviso legal</a></li>
+				<li><a href="#">Mapa web</a></li>
+			</ul>
+		</footer>
 </body>
 </html>

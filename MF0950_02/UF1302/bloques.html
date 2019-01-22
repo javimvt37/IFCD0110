@@ -179,6 +179,37 @@
 			samp{
 				font-size: 110%;
 			}
+			footer{
+				
+				border:5px solid #EB8166;
+				border-radius: 10px;
+				background-color: #F0A490;
+				box-shadow: 5px 5px 5px #E34c26;			
+				
+			}
+			a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
         </style>
         
         <script></script>
@@ -195,18 +226,30 @@
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
     </head>
     <body>
+       <header>
         <h1 id="intro">HTML Bloques</h1>
         <hr>
+		</header>
+		<nav>
+	<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a>
+        <hr>
+		</nav>
+       <aside>
         <ul>
         	<li><a href="#citan">Etiquetas que citan los textos</a></li>
         	<li><a href="#agrupan">Elementos HTML que agrupan el texto</a></li>
         	<li><a href="#codigo">Etiquetas de código de computadora</a></li>
         </ul>
         <hr>
-		<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
-        <hr>
+		</aside>
+		
+      <article>
        
             <h2 id="citan">Etiquetas que citan los textos</h2>
+            <figure style="float: left">
+    	<img src="img/html-bloques.png" width="300px">
+		<figcaption><small>HTML5 Bloques</small></figcaption>
+    </figure>
 		<p>Las abreviaturas de marcado <code>&lt;abbr&gt;</code> pueden propocionar información útil a los navegadores, sistemas de traducción y motores de búsqueda. Utiliza el atribute <code>title</code> para definir de la abreviación.</p>
 		<p>La etiqueta de marcado <code>&lt;cite&gt;</code> hace referencia a un trabajo creativo como un libro, una película,  un programa de televisión o una canción, no el nombre de una persona.</p>
 		<p>La etiqueta de marcado <code>&lt;blockquote&gt;</code> define una cita larga que se representa como un elemento de bloque. No genera automáticamente comillas alrededor del contenido.</p>
@@ -288,7 +331,8 @@
           </div>
           <p><a href="#intro">Volver a inicio</a></p>
           <hr>
-           
+		</article>
+          <article>
            <h2 id="agrupan">Elementos HTML que agrupan el texto</h2>
             <p>El elemento <code>&lt;div&gt;</code> se utiliza a menudo como un contenedor para otros elementos HTML. El elemento <code>&#8249;div&gt;</code> tiene atributos, pero no son necesarios, los más comunes son style, class y id. Cuando se utiliza junto con CSS, el elemento &lt;div&gt; puede ser utilizado con el estilo de bloques de contenido:</p>
             
@@ -349,8 +393,9 @@
             <p><b>Nota:</b> Un elemento en bloque siempre empieza en una línea nueva y ocupa todo el ancho disponible (se extiende hacia la izquierda y a la derecha tanto como sea posible). Un elemento en línea no se inicia en una nueva línea, sólo ocupa el mismo ancho que sea necesario.</p>
        </div>
        <p><a href="#intro">Volver a inicio</a></p>
-       <hr>
-       <br>
+       <hr><br>
+		</article>
+       <article>
 		<h2 id="codigo">Etiquetas de código de computadora</h2>
       <ul>
 		  <li>La etiqueta <code>&lt;code&gt;</code> define un fragmento de código de ordenador.</li>
@@ -425,10 +470,15 @@
                     </div>
                      <p><a href="#intro">Volver a inicio</a></p>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+		</article>
+                <footer>
+			<ul style="list-style-type: none;">
+				<li><a href="#">Política de cookies</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li><a href="#">Aviso legal</a></li>
+				<li><a href="#">Mapa web</a></li>
+			</ul>
+		</footer>
          
           
     </body>

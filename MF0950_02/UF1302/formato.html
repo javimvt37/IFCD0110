@@ -116,7 +116,37 @@
                 /* Caja sombreada; primero se especifican los lados donde sale la sombra, segundo rgba"a"alpha" por la transparencia"y por ultimo crea otra sombra superpuesta */
                 box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
             }
-            
+            footer{
+				
+				border:5px solid #EB8166;
+				border-radius: 10px;
+				background-color: #F0A490;
+				box-shadow: 5px 5px 5px #E34c26;			
+				
+			}
+			a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
         </style>
         
@@ -134,31 +164,47 @@
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
     </head>
     <body>
+       <header>
         <h1 id="intro">Formato HTML</h1>
         <hr>
+		</header>
+		<nav>
+	<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a>
+        <hr>
+		</nav>
+       <aside>
         <ul>
         	<li><a href="#encabezados">Encabezados de texto</a></li>
         	<li><a href="#formato">Etiquetas que dan formato al texto</a></li>
         	<li><a href="#separan">Etiquetas que separan el texto</a></li>
         	<li><a href="#ejemplos">Ejemplo de uso</a></li>
         </ul>
+        
         <hr>
-		<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
-        <hr>
+        </aside>
+      
+        
         <p>El formato de texto, es el marcado que se aplica a un texto para añadirle datos de forma. Al texto resultante se le conoce como texto formateado, texto con estilos o texto enriquecido.</p>
         <hr>
-            <h2 id="encabezados">Encabezados de texto</h2>
+           <main>
+           <article style="overflow: hidden;">
+   <h2 id="encabezados">Encabezados de texto</h2>
             <!--el atributo aling ya no se usa en html5, con el style css float, dejamos la imagen flotando a la derecha-->
-            <img src="img/html-formatos-de-texto.png" alt="html formatos de texto" width="500px" style="float: right">
+    
+    <figure style="float: left">
+    	<img src="img/html-formatos.png" width="300px">
+		<figcaption><small>HTML5</small></figcaption>
+    </figure>
+           
             <p>Los motores de búsqueda utilizan los encabezados para indexar la estructura y el contenido de sus páginas web.</p>
             <p>Los usuarios hojean las páginas por sus títulos. Es importante utilizar los encabezados para mostrar la estructura del documento.</p>
             <p>Los encabezados <code>&lt;h1&gt;</code>deben ser utilizados para los encabezados principales, seguido por encabezamientos <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, menos importantes y así sucesivamente.</p>
-            
-		
+			   
+			   <br>
         <div class="nota">
             <p><b>Nota:</b> Usar encabezados HTML para sólo encabezados. No utilice encabezados para que el texto GRANDE o negrita.</p>
         </div>
-
+<br>
             <table>
                 <tr>
                     <th>Etiqueta</th>
@@ -206,6 +252,8 @@
             <p><a href="#intro">Volver a inicio</a></p>
         <br>
         <hr>
+			   </article>
+       <article>
         <h2 id="formato">Etiquetas que dan formato al texto</h2>
             <p>HTML también define etiquetas especiales para la definición de texto con un especial significado .</p>
             <p>HTML utiliza etiquetas para el formato de salida, como negrita o cursiva texto.</p>
@@ -294,6 +342,7 @@
                     </tr>
                     
     </table>
+    <br>
 		<div class="nota">
             <p><b>Nota:</b> Los navegadores muestran <code>&lt;strong&gt;</code> como <code>&lt;b&gt;</code>, y <code>&lt;em&gt;</code> como <code>&lt;i&gt;</code>. Sin embargo, hay una diferencia en el significado de las siguientes etiquetas: <code>&lt;b&gt;</code>y <code>&lt;i&gt;</code>define el texto en negrita y cursiva, pero <code>&lt;strong&gt;</code>y <code>&lt;em&gt;</code>significa que el texto es "importante".
 
@@ -301,6 +350,8 @@
        </div>
          <p><a href="#intro">Volver a inicio</a></p>
           <hr>
+			   </article>
+			   <article>
 		<h2 id="separan">Etiquetas que separan el texto</h2>
          
 		<p>La etiqueta <code>&lt;p&gt;</code> separa el texto, añadiendo automáticamente un espacio (margen) antes y después de cada elemento <code>&lt;p&gt;</code>. El navegador eliminará todos los espacios en blanco y las líneas adicionales cuando se visualiza la etiqueta <code>&lt;p&gt;</code>.</p>
@@ -347,7 +398,8 @@ Esto es un texto preformateado.</pre></td>
          
          <p><a href="#intro">Volver a inicio</a></p>
           <hr>
-           
+			   </article>
+           <article>
             <h2 id="ejemplos"><small>Ejemplo de uso</small></h2>
             <p><strong><mark>Texto en negrita y resaltado</mark></strong></p>
             <hr>
@@ -358,6 +410,17 @@ Esto es un texto preformateado.</pre></td>
             El lenguaje de marcado <s>marcas</s> (<ins>etiquetas</ins>) de Hypertexto.<br>
             <strong>W3C</strong> (<i><b>W</b>orld  <b>W</b>ide <b>W</b>eb</i>)</p>
             <p><a href="#intro">Volver a inicio</a></p>
+			   </article>
+		</main>
+          
+            <footer>
+			<ul style="list-style-type: none;">
+				<li><a href="#">Política de cookies</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li><a href="#">Aviso legal</a></li>
+				<li><a href="#">Mapa web</a></li>
+			</ul>
+		</footer>
         
     </body>
 </html>

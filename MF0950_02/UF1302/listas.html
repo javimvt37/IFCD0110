@@ -187,6 +187,37 @@
 			samp{
 				font-size: 110%;
 			}
+			footer{
+				
+				border:5px solid #EB8166;
+				border-radius: 10px;
+				background-color: #F0A490;
+				box-shadow: 5px 5px 5px #E34c26;			
+				
+			}
+			a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
         </style>
         
         <script></script>
@@ -203,8 +234,15 @@
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
     </head>
     <body>
+       <header>
         <h1 id="intro">HTML Listas</h1>
         <hr>
+		</header>
+		<nav>
+	<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a>
+        <hr>
+		</nav>
+       <aside>
         <ul>
         	<li><a href="#tabla">Etiquetas que definen una tabla</a></li>
         	<li><a href="#tipos">Diferentes tipos de listas</a></li>
@@ -213,9 +251,10 @@
         	<li><a href="#anidadas">Listas anidadas</a></li>
         </ul>
         <hr>
-		<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
-        <hr>
-       
+		</aside>
+		
+      <main>
+       <article>
             <h2 id="tabla">Etiquetas que definen una tabla</h2>
 		<p>Una tabla HTML se define con la <code>&lt;table&gt;</code> etiqueta.</p>
 
@@ -273,6 +312,8 @@
             </table>
          <p><a href="#intro">Volver a inicio</a></p>
         <hr>
+		  </article>
+		  <article>
 		<h2 id="tipos">Diferentes tipos de listas</h2>
     <p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado.El atributo scope especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
         
@@ -323,6 +364,8 @@
       </tr>
     </table>
            <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		  <article>
 		<h2 id="desordenadas">Listas desordenadas</h2>
           <div  style="overflow: hidden; width: 95%">
           	<div  style="width: 32%; float: left;border: 1px solid #dddddd;margin: 1px ">
@@ -348,6 +391,8 @@
 			  </div>
           </div>
            <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		  <article>
 		<h2 id="ordenadas">Listas ordenadas</h2>
 		<table style="width: 95%;">
 				
@@ -378,6 +423,8 @@
 			</table>
 		
          <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		  <article>
 		<h2 id="anidadas">Listas anidadas</h2>
 		<ol>Curso confección web
 			<li>Modulo 1
@@ -407,5 +454,15 @@
 			</li>
 		</ol>
 		 <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		</main>
+				 <footer>
+			<ul style="list-style-type: none;">
+				<li><a href="#">Política de cookies</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li><a href="#">Aviso legal</a></li>
+				<li><a href="#">Mapa web</a></li>
+			</ul>
+		</footer>
 </body>
 </html>
