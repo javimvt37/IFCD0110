@@ -1,0 +1,471 @@
+
+
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>Etiquetas que dan formato al texto</title>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="title" content="Confección y publicación de páginas web">
+        <meta name="author" content="Javier Molina">
+
+        <style>
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                width: 80%;
+                /* margin arriba y abajo no tiene y derecha e izquierda en auto "se centra de la misma forma de iz y derecha, auqneu cambie de formato o tamaño" */
+                margin: 0 auto;
+                }
+
+            h1,h2,h3,h4,h5,h6{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* div{
+               /*  background-color: #f1f1f1; */
+               
+                /* Al poner dos numeros el primero es el margen de arriba y abajo y el segundo izq y derecha ejem: margin:10 5; */
+                /* margin: 20px;
+                padding: 20px;
+                } */
+                /*estilo para los div que contienene notas */
+            .nota{
+                background-color: #ffffcc;
+                border-left: 6px solid #ffeb3b;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+                
+                }
+            /* table, th, td {
+                background-color: #cccccc;
+                
+                 } */
+            #tabla1{
+                font-family: Arial, Helvetica, sans-serif;
+                
+                /* De esta forma no me crea doble linea */
+                border-collapse: collapse;
+
+                width: 100%;
+            }
+            #tabla1 td, #tabla1 th{
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+			
+		
+            /* Para que me pinte una linea gris, otra no en la tabla, even para que lo aplique a las pares */
+           #tabla1 tr:nth-child(even){
+                background-color: #cccccc;
+            }
+			
+			.tableDemo table{
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				width: 100%;
+				border-collapse: collapse;
+			}
+			
+			.tableDemo td,th{
+				border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+			}
+            /* Solo aplica los encabezados dentro de las tablas */
+            table h1,h2,h3,h4,h5,h6{
+                margin: 0;
+            }
+
+            hr{
+                border: 1px solid #eee;
+                /* border-style: dotted; */
+                
+            }
+            
+            code{
+                color:crimson;
+                background-color: #f1f1f1;
+                padding-left: 4px;
+                padding-right: 4px;
+                font-size: 110%;
+            }
+			
+            /* Siempre en empieza en minuscula, sin espacions ni simbolos */
+            .etiquetasHTML{
+                background-color: #f1f1f1;
+                border: 1px solid #cccccc;
+                font-size: 24px;
+                padding: 16px;
+            }
+            /* Estilo anidado: etiquetas span dentro de code */
+            code span{
+                color:mediumblue;
+                }
+            code span span{
+                color:brown;
+            }
+            code span span span{
+                color:red;
+            }
+            .code{
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color: #fff;
+                /* 8px arriba y abajo y 12 derecha e izquierda */
+                padding: 8px 12px;
+                border-left: 4px dotted #4CAF50;
+                /* Seria color del texto */
+                color:black;
+            }
+			.cite{
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color: #fff;
+                /* 8px arriba y abajo y 12 derecha e izquierda */
+                padding: 8px 12px;
+                border-left: 4px dotted #20ACB8;
+                /* Seria color del texto */
+                color:black;
+            }
+            .ejemplo{
+                background-color: #f1f1f1;
+                padding: 8px 16px;
+                margin: 20px 0;
+                /* Caja sombreada; primero se especifican los lados donde sale la sombra, segundo rgba"a"alpha" por la transparencia"y por ultimo crea otra sombra superpuesta */
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            }
+			.blockquote{
+				margin-bottom: 0px;
+				margin-top: 0px;
+			}
+			
+			/*Hace que al pasar opr la tabla cambie al color de fondo elegido*/
+
+			span{
+				padding: 2px 5px;
+				margin: 2px;
+				/*font-size: 87.5%;*/
+				color: #212529;
+				background-color: white;
+				/* redondea los bordes*/
+				border-radius: 0.3rem;
+	
+			}
+			kbd{
+				padding: 2px 5px;
+				margin: 2px;
+				/*font-size: 87.5%;*/
+				color: white;
+				background-color: black;
+				/* redondea los bordes*/
+				border-radius: 0.3rem;
+			}
+			#divPadre{
+				overflow: hidden;
+				margin:  0 auto; 
+				width: 80%; 
+				/*border: 1px solid red;*/
+			}
+			#divHijo1{
+				float: left; 
+				width:  33.33%;  
+				/*background-color: lightblue;*/
+			}
+			#divHijo2{
+				float: left; 
+				width:  33.33%;  
+				/*background-color: darkgray;*/
+			}
+			#divHijo3{
+				float: left; 
+				width:  33.33%;  
+				/*background-color: darkkhaki;*/
+			}
+			samp{
+				font-size: 110%;
+			}
+			footer{
+				
+				border:5px solid #EB8166;
+				border-radius: 10px;
+				background-color: #F0A490;
+				box-shadow: 5px 5px 5px #E34c26;			
+				
+			}
+			nav a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+			
+nav a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+				}
+        </style>
+        
+        <script></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script type="text/javascript" src="js/funciones.js"></script>
+
+        <link rel="icon" type="image/png" href="img/html5.png">
+        <link rel="icon" type="image/gif" href="img/html5.gif">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/html5.ico"> 
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        
+        <!--Etiqueta base, en este ejemplo indica mi direccion de la carpeta donde alojo imahgenes y asi me es mas comodo para no indicar siempre la direccion completa, solo escribir el nombre de la imagen-->
+         <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
+    </head>
+    <body>
+       <header>
+        <h1 id="intro">HTML Listas</h1>
+        <hr>
+		</header>
+		<nav>
+	<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a>
+        <hr>
+		</nav>
+       <aside>
+        <ul>
+        	<li><a href="#tabla">Etiquetas que definen una tabla</a></li>
+        	<li><a href="#tipos">Diferentes tipos de listas</a></li>
+        	<li><a href="#desordenadas">Listas desordenadas</a></li>
+        	<li><a href="#ordenadas">Listas ordenadas</a></li>
+        	<li><a href="#anidadas">Listas anidadas</a></li>
+        </ul>
+        <hr>
+		</aside>
+		
+      <main>
+       <article style="overflow:hidden ">
+            <h2 id="tabla">Etiquetas que definen una tabla</h2>
+            <figure style="float: left">
+		   <img src="img/html-listas.png" alt="listas" style="width: 300px"><figcaption><small>Html5</small></figcaption>
+		   </figure>
+		<p>Una tabla HTML se define con la <code>&lt;table&gt;</code> etiqueta.</p>
+
+<p>Cada fila de la tabla se define con la <code>&lt;tr&gt;</code> etiqueta. Un encabezado de la tabla se define con la <code>&lt;th&gt;</code> etiqueta. Por defecto, encabezados de la tabla están en negrita y centrado. A los datos/celda de la tabla se define con la <code>&lt;td&gt;</code> etiqueta.</p>
+
+		
+       <br>
+
+            <table id="tabla1">
+                <tr>
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                    
+                </tr>
+                <tr>
+                  <td>&lt;table&gt;</td>
+                  <td>Define una tabla</td>
+                </tr>
+                <tr>
+                  <td>&lt;th&gt;</td>
+                  <td>Define una celda de cabecera en una tabla</td>
+                </tr>
+                <tr>
+                  <td>&lt;tr&gt;</td>
+                  <td>Define una fila en una tabla</td>
+                </tr>
+                <tr>
+                  <td>&lt;td&gt;</td>
+                  <td>Define una celda en una tabla</td>
+                </tr>
+                <tr>
+                  <td>&lt;caption&gt;</td>
+                  <td>Define el titulo o leyenda de una tabla</td>
+                </tr>
+                <tr>
+                  <td>&lt;colgroup&gt;</td>
+                  <td>Especifica en una tabla un grupo de una o más columnas para darle formato</td>
+                </tr>
+                <tr>
+                  <td>&lt;col&gt;</td>
+                  <td>Especifica propiedades de columna para cada columna dentro de un elemento &lt;colgroup&gt;</td>
+                </tr>
+                <tr>
+                  <td>&lt;thead&gt;</td>
+                  <td>Agrupa el contenido de encabezado de una tabla</td>
+                </tr>
+                <tr>
+                  <td>&lt;tbody&gt;</td>
+                  <td>Agrupa el contenido del cuerpo de una tabla</td>
+                </tr>
+                <tr>
+                  <td>&lt;tfoot&gt;</td>
+                  <td>Agrupa el contenido del pie de página de una tabla</td>
+                </tr>
+            </table>
+         <p><a href="#intro">Volver a inicio</a></p>
+        <hr>
+		  </article>
+		  <article>
+		<h2 id="tipos">Diferentes tipos de listas</h2>
+    <p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado.El atributo scope especifica si una celda de encabezado es una cabecera de una columna, fila o grupo de columnas o filas. El atributo scope no tiene ningún efecto visual en los navegadores web normales, pero puede ser utilizado por los lectores de pantalla.</p>
+        
+	
+         <br>
+         
+       
+         <!--tablas anidadas--> <!--width:95%; border:0; text-align:center; cellpadding:0; cellspacing:0;-->
+    <table class="tableDemo" style="width: 95%; text-align: center">
+      <tr>
+        <td style="width: 25%">
+        	<ul>Listas desordenadas
+        		<li>Primera &lt;li&gt;</li>
+        		<li>Segunda &lt;li&gt;</li>
+        		<li>Tercera &lt;li&gt;</li>
+        	</ul>
+        </td>
+        <td style="width: 25%">
+        	<ol>Listas ordenadas
+        		<li>Primera &lt;li&gt;</li>
+        		<li>Segunda &lt;li&gt;</li>
+        		<li>Tercera &lt;li&gt;</li>
+        		
+        	</ol>
+        </td>
+        <td style="width: 25%">
+        	<dl>Listas de definición
+        	<dt>Primer &lt;dt&gt;</dt>
+        		<dd>Primera definicion &lt;dd&gt;</dd>
+        		<dd>Segunda definicion &lt;dd&gt;;</dd>
+        		
+			
+			
+        	</dl>
+        </td>
+        <td style="width: 25%">
+        <!--En ul no esta permitido en html5 el atributo type-->
+        	<ol >Lista anidada
+        		<li>HTML</li>
+        		<ul>
+        			<li>sdfs</li>
+        			
+        		</ul>
+        		<li>CSS</li>
+        		
+        	</ol>
+        </td>
+      </tr>
+    </table>
+           <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		  <article>
+		<h2 id="desordenadas">Listas desordenadas</h2>
+          <div  style="overflow: hidden; width: 95%">
+          	<div  style="width: 32%; float: left;border: 1px solid #dddddd;margin: 1px ">
+          		<ul style="list-style-image: url(img/lista.gif)">Lista desordenada con una imagen
+          			<li>sdfsdf</li>
+          			<li>sdfsdf</li>	
+          			<li>sdfsdf</li>
+          		</ul>
+          	</div>
+          	<div style="width: 32%; float: left;border: 1px solid #dddddd;margin: 1px">
+          		<ul style="list-style-type: square" >Lista desordenada con tipo cuadrado
+          			<li>fsdfsdf</li>
+          			<li>sfsdf</li>
+          			<li>sfsdf</li>
+          		</ul>
+          	</div>
+			  <div style="width: 32%; float: left;border: 1px solid #dddddd;margin: 1px">
+			  	<ul>Lista desordenada por defecto
+			  		<li>ssdfsd</li>
+			  		<li>sdfsd</li>
+			  		<li>sdfsdf</li>
+			  	</ul>
+			  </div>
+          </div>
+           <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		  <article>
+		<h2 id="ordenadas">Listas ordenadas</h2>
+		<table style="width: 95%;">
+				
+				<tr>
+					<td style="width: 33%; border: 1px solid #dddddd;">
+						<ol>Lista ordenada por defecto
+							<li>Primero</li>
+							<li>Segundo</li>
+							<li>Tercero</li>
+						</ol>
+					</td>
+					<td style="width: 33%; border: 1px solid #dddddd;">
+						<ol start="5">Lista ordenada a partir del 5
+							<li>Quinto</li>
+							<li>Sexto</li>
+							<li>Séptimo</li>
+						</ol>
+					</td>
+					<td style="width: 33%; border: 1px solid #dddddd;">
+						<ol type="I">Lista ordenada en números romanos
+							<li>Primero</li>
+							<li>Seguno</li>
+							<li>Tercero</li>
+						</ol>
+					</td>
+				</tr>
+	
+			</table>
+		
+         <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		  <article>
+		<h2 id="anidadas">Listas anidadas</h2>
+		<ol>Curso confección web
+			<li>Modulo 1
+				<ul>
+					<li>HTML
+						<dl style="margin: 0px">
+							<dt>HyperText</dt>
+								<dd>Hipertexto de lenguaje de marcado</dd>
+							
+						</dl>
+					</li>
+					<li>CSS</li>
+					
+				</ul>
+			</li>
+			<li>Módulo 2
+				<ul>
+					<li>JavaScript</li>
+				</ul>
+				
+			</li>
+			<li>
+				Módulo 3
+				<ul>
+					<li>Publicación web</li>
+				</ul>
+			</li>
+		</ol>
+		 <p><a href="#intro">Volver a inicio</a></p>
+		  </article>
+		</main>
+				 <footer>
+			<ul style="list-style-type: none;">
+				<li><a href="#">Política de cookies</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li><a href="#">Aviso legal</a></li>
+				<li><a href="#">Mapa web</a></li>
+			</ul>
+		</footer>
+</body>
+</html>

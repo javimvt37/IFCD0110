@@ -1,0 +1,188 @@
+
+
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <title>Curso diseño páginas web</title>
+        <meta charset="utf-8">
+        
+        <meta name="description" content="Diseño de páginas web con HTML, CSS y JavaScript">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="title" content="Confección y publicación de páginas web">
+        <meta name="author" content="Javier Molina">
+
+        <style>
+            body{
+				
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+				width: 80%;
+                
+                /* margin arriba y abajo no tiene y derecha e izquierda en auto "se centra de la misma forma de iz y derecha, auqneu cambie de formato o tamaño" */
+                margin: 0 auto;
+                }
+			
+
+            h1,h2,h3,h4,h5,h6{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            /* div{
+               /*  background-color: #f1f1f1; */
+               
+                /* Al poner dos numeros el primero es el margen de arriba y abajo y el segundo izq y derecha ejem: margin:10 5; */
+                /* margin: 20px;
+                padding: 20px;
+                } */
+                /*estilo para los div que contienene notas */
+            .nota{
+                background-color: #ffffcc;
+                border-left: 6px solid #ffeb3b;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 5px;
+                
+                }
+            table, th, td {
+               
+                padding: 15px; 
+				margin: 15px; }
+            hr{
+                border: 1px solid #eee;
+                /* border-style: dotted; */
+                
+            }
+            code{
+                color:crimson;
+                background-color: #f1f1f1;
+                padding-left: 4px;
+                padding-right: 4px;
+                font-size: 110%;
+            }
+            /* Siempre en empieza en minuscula, sin espacions ni simbolos */
+            .etiquetasHTML{
+                background-color: #f1f1f1;
+                border: 1px solid #cccccc;
+                font-size: 24px;
+                padding: 16px;
+            }
+            /* Estilo anidado: etiquetas span dentro de code */
+            code span{
+                color:mediumblue;
+                }
+            code span span{
+                color:brown;
+            }
+            code span span span{
+                color:red;
+            }
+            .code{
+                margin-top: 16px;
+                margin-bottom: 16px;
+                background-color: #fff;
+                /* 8px arriba y abajo y 12 derecha e izquierda */
+                padding: 8px 12px;
+                border-left: 4px dotted #4CAF50;
+                /* Seria color del texto */
+                color:black;
+            }
+            .ejemplo{
+                background-color: #f1f1f1;
+                padding: 8px 16px;
+                margin: 20px 0;
+                /* Caja sombreada; primero se especifican los lados donde sale la sombra, segundo rgba"a"alpha" por la transparencia"y por ultimo crea otra sombra superpuesta */
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+            }
+			table{
+				border-collapse: collapse;
+				border: none;
+				
+			}
+			div div img{
+				box-shadow: 2px 2px 10px grey;
+				 width: 99.99%;
+			}
+			
+			/*div div img:hover{
+					box-shadow: 5px 5px 10px grey;
+					width: 100%;
+				}*/
+			nav a:link {
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+			
+nav a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+nav a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+				}
+			.logo{
+				box-shadow:  none;
+				width: 100%;
+				
+			}
+			div div{
+				float:left;  width: 150px; margin: 20px;
+			}
+        </style>
+        
+        <script></script>
+        <link rel="stylesheet" href="css/estilos.css">
+        <script type="text/javascript" src="js/funciones.js"></script>
+
+        <link rel="icon" type="image/png" href="img/imagen.png">
+        <link rel="icon" type="image/gif" href="img/imagen.gif">
+        <link rel="icon" type="image/vnd.microsoft.icon" href="img/imagen.ico"> 
+        
+        <!--Etiqueta base, en este ejemplo indica mi direccion de la carpeta donde alojo imahgenes y asi me es mas comodo para no indicar siempre la direccion completa, solo escribir el nombre de la imagen-->
+         <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
+    </head>
+    <body>
+   
+    <br>
+    <div style="overflow: hidden">
+		<div style=" width: 126px; float: left;"><a href="index.html" ><img class="logo" src="img/HTML5_Logo_128.png" alt="Logo html5" style="width: 128px"  height="128" title="Inicio de la página"></a></div>
+		<div style="float: left; width: auto"><h1>Lenguaje de marcas</h1></div>
+		</div>     
+        
+        <hr>
+        <nav>
+			<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a>
+       </nav>
+        <hr>
+        <div style="overflow: hidden; ">
+		  <div  ><a href="introduccion.html"><img src="img/index/html5demos.png" alt="introducción" >Introducción</a> </div>
+       	  <div ><a href="formato.html"><img src="img/index/html5-jp.png" alt="formato">Formato</a> </div>
+       	  <div ><a href="bloques.html"><img src="img/index/jsdoit_en.png" alt="bloques" ><br>Bloques</a> </div>
+       	  <div ><a href="tablas.html"><img src="img/index/sencha.png" alt="tabla" ><br>Tablas</a> </div>
+        	<div><a href="listas.html"><img src="img/index/youtube-html5.jpg" alt="listas"><br>
+       	    Listas</a> </div>
+        </div>
+        <hr>
+        <br>
+        <table  style="border: none">
+        	<tr style="border: none">
+				<td  style="border: none; "><a href="introduccion.html"><img src="img/index/html5demos.png" alt="introducción" >Introducción</a></td>
+        		<td  style="border: none; padding: 5px"><a href="formato.html"><img src="img/index/html5-jp.png" alt="formato" >Formato</a></td>
+        		<td  style="border: none; padding: 5px"><a href="bloques.html"><img src="img/index/jsdoit_en.png" alt="bloques" >Bloques</a> </td>
+        		<td  style="border: none; padding: 5px"><a href="tablas.html"><img src="img/index/sencha.png" alt="tabla" ><br>Tablas</a></td>
+        		<td  style="border: none; padding: 5px"><a href="listas.html"><img src="img/index/youtube-html5.jpg" alt="listas" ><br>Listas</a></td>
+        	</tr>
+        </table>
+       <br><br>
+       
+        </body>
+</html>
