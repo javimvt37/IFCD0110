@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>HTML Atributos</title>
+</head>
+
+<body>
+<h1>HTML Atributos</h1>
+<hr>
+<h2>Atributos</h2>
+<p>Los atributos porporcionan información adicional sobre los elementos HTML</p>
+<hr>
+<h2>HTML5 Attributes</h2>
+<p>HTML5 added the following attributes for &lt;input&gt;:</p>
+<ul>
+  <li>autocomplete</li>
+  <li>autofocus</li>
+  <li>form</li>
+  <li>formaction</li>
+  <li>formenctype</li>
+  <li>formmethod</li>
+  <li>formnovalidate</li>
+  <li>formtarget</li>
+  <li>height and width</li>
+  <li>list</li>
+  <li>min and max</li>
+  <li>multiple</li>
+  <li>pattern (regexp)</li>
+  <li>placeholder</li>
+  <li>required</li>
+  <li>step</li>
+</ul>
+<p>and the following attributes for &lt;form&gt;:</p>
+<ul>
+  <li>autocomplete</li>
+  <li>novalidate</li>
+</ul>
+<hr>
+<h2>El atributo value</h2>
+<p>El atributo value especifica el valor inicial para un campo de entrada:</p>
+<form action="">
+<fieldset>
+<legend>Atributo value</legend>
+First name:<br>
+<input type="text" name="firstname" value="John">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</fieldset>
+</form>
+<hr>
+<h2>El atributo de sólo lectura</h2>
+<p>El atributo readonly especifica que el campo de entrada es de sólo lectura (no se puede cambiar):</p>
+<form action="">
+<fieldset>
+<legend>Atributo readonly</legend>
+First name:<br>
+<input type="text" name="firstname" value ="Solo se puede leer" readonly>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</fieldset>
+</form>
+<hr>
+<h2>El atributo disabled</h2>
+<p>El atributo disabled especifica que el campo de entrada se desactiva.</p>
+<p>Un campo de entrada con discapacidad es inservible y poco se puede hacer clic, y su valor no se enviará al presentar el formulario:</p>
+<form action="">
+<fieldset>
+<legend>El atributo disabled</legend>
+First name:<br>
+<input type="text" name="firstname" value ="Deshabilitado, ni si quiera se envia esta información" disabled>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</fieldset>
+</form>
+<hr>
+<h2>El Atributo tamaño </h2>
+<p>El atributo size especifica el tamaño (en caracteres) para el campo de entrada:</p>
+<form action="">
+<fieldset>
+<legend>Atributo size</legend>
+First name:<br>
+<input type="text" name="firstname" value="John" size="40">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+</fieldset>
+</form>
+<hr>
+<h2>El Atributo maxlength</h2>
+<p>El atributo maxlength especifica la longitud máxima permitida para el campo de entrada:</p>
+<p>Con un maxlengthatributo, el campo de entrada no aceptará más que el número de caracteres permitidos.</p>
+
+<p>El maxlengthatributo no proporciona ninguna retroalimentación. Si desea alertar al usuario, debe escribir código JavaScript.</p>
+<form action="">
+	<fieldset>
+		<legend>Atributo maxlength</legend>
+		Nombre:<br>
+	  <input type="text" maxlength="9">
+	</fieldset>
+</form>
+<strong>Nota:</strong> Las restricciones de entrada no son infalibles, y JavaScript proporciona muchas maneras de agregar la entrada ilegal. Para restringir la entrada de forma segura, se debe verificar por el receptor (el servidor), así!
+<hr>
+<h2>El Atributo de autocompletar</h2>
+<p>El atributo autocomplete especifica si un campo de formulario o de entrada debe tener autocompletar encendido o apagado.</p>
+<p>Cuando autocompletar está activado, el navegador completa automáticamente los valores de entrada basado en valores que el usuario ha introducido antes.</p>
+<p><strong>Consejo:</strong> Es posible tener autocompletar "en" para el formulario, y "off" para los campos de entrada específicos, o viceversa.</p>
+<p>El atributo autocomplete trabaja con &lt;form&gt;y en los siguientes &lt;input&gt;tipos: texto, búsqueda, URL, teléfono, correo electrónico, contraseña, datepickers, rango y color.</p>
+<form action="/action_page.php" autocomplete="on">
+	<fieldset>
+		<legend>Atributo autocompplete</legend>
+		Campo con autocomplete ON: <br>
+		<input type="text" name="on"><br>
+		Campo con autocomplete Off: <br>
+		<input type="text" name="off" autocomplete="off"><br>
+		<input type="submit">
+  </fieldset>
+</form>
+		
+	<!--Parece que no me realiza el complete si no pongo name-->
+	
+<hr>
+<h2>El atributo novalidate</h2>
+<p>El atributo novalidate es un &lt;form&gt;atributo.</p>
+<p>Cuando está presente, novalidate especifica que los datos del formulario no deben ser validados cuando se presente.</p>
+<form action="/action_page.php" novalidate>
+  E-mail: <input type="email" name="user_email">
+  <input type="submit">
+</form>
+<hr>
+<h2>El Atributo enfoque automático</h2>
+<p>El atributo autofocus especifica que el campo de entrada de forma automática debe obtener el foco cuando se carga la página.</p>
+<form action="/action_page.php">
+  Nombre(autofocus):<input type="text" name="fname" autofocus><br>
+  Apellidos: <input type="text" name="lname"><br>
+  <input type="submit">
+</form>
+<hr>
+<h2>La altura y anchura Atributos</h2>
+<p>Los atributos heighty width especifican la altura y la anchura de un &lt;input type="image"&gt;elemento.</p>
+<form action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="image" src="img/img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+<br>
+<strong>Nota:</strong> Siempre especificar el tamaño de las imágenes. Si el navegador no sabe el tamaño, la página parpadeará mientras que las imágenes se cargan.
+<hr>
+<h2>Los MIN y MAX Atributos</h2>
+<p>El miny maxatributos especifican los valores mínimo y máximo para un &lt;input&gt;elemento.</p>
+<p>El miny maxatributos trabajar con los siguientes tipos de entrada: número, rango, fecha, fecha y hora local, el mes, el tiempo y la semana.</p>
+<form action="/action_page.php">
+
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5"><br>
+
+  <input type="submit">
+  
+</form>
+<hr>
+<h2>El atributo multiple</h2>
+<p>El atributo multiple especifica que el usuario está autorizado para entrar en más de un valor en el &lt;input&gt;elemento.</p>
+<p>El atributo multiple trabaja con los siguientes tipos de entrada: correo electrónico y archivos.</p>
+<form action="/action_page.php">
+  Select images: <input type="file" name="img" multiple>
+  <input type="submit">
+</form>
+<p>Intenta seleccionar más de un archivo</p>
+<hr>
+<h2>El patrón de Atributo</h2>
+<p>El patternatributo especifica una expresión regular que el &lt;input&gt;valor del elemento se compara.</p>
+<p>El patternatributo trabaja con los siguientes tipos de entrada: texto, búsqueda, URL, teléfono, correo electrónico y contraseña.</p>
+<p><strong>Consejo:</strong> Utilice el mundial <a href="https://www.w3schools.com/tags/att_global_title.asp">título</a> de atributos para describir el patrón para ayudar al usuario.</p>
+<p><strong>Consejo:</strong> Más información sobre <a href="https://www.w3schools.com/js/js_regexp.asp">expresiones regulares</a> en JavaScript.</p>
+
+<form action="/action_page.php">
+  Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+  <input type="submit">
+  <p>Solo permite letras y tres digitos</p>
+</form>
+<hr>
+<h2>El marcador de posición Atributo</h2>
+<p>El atributo placeholder especifica una pista que describe el valor esperado de un campo de entrada (un valor de muestra o una breve descripción del formato).</p>
+<p>La pista se muestra en el campo de entrada antes de que el usuario introduce un valor.</p>
+<p>El atributo placeholder trabaja con los siguientes tipos de entrada: texto, búsqueda, URL, teléfono, correo electrónico y contraseña.</p>
+<form action="/action_page.php">
+  <input type="text" name="name" placeholder="Nombre"><br>
+  <input type="text" name="apellido" placeholder="Apellido"><br>
+  <input type="submit" value="Enviar">
+</form>
+
+<hr>
+<h2>El atributo necesario</h2>
+<p>El requiredatributo especifica que un campo de entrada debe ser completado antes de enviar el formulario.</p>
+<p>El requiredatributo trabaja con los siguientes tipos de entrada: texto, búsqueda, URL, teléfono, correo electrónico, contraseña, selectores de fecha, número, casillas de verificación, de radio y de archivo.</p>
+
+<form action="/action_page.php">
+  Nombre: <input type="text" name="nombre" placeholder="*" required><br>
+  Apellido: <input type="text" name="apellido">
+  <input type="submit">
+</form>
+<hr>
+<h2>El atributo paso</h2>
+<p>El atributo step especifica los intervalos de números legales para un &lt;input&gt;elemento.</p>
+<p>Ejemplo: Si el paso = "3", números legales podrían ser -3, 0, 3, 6, etc.</p>
+<div>
+  <p><strong>Consejo:</strong> El atributo de paso puede ser utilizado junto con el máximo y el mínimo atributos para crear una gama de valores legales.</p>
+</div>
+<p>El atributo step trabaja con los siguientes tipos de entrada: número, rango, fecha, fecha y hora local, el mes, el tiempo y la semana.</p>
+<form action="/action_page.php">
+  <input type="number" name="points" step="3" placeholder="Intervalos de 3 en 3">
+  <input type="submit">
+</form>
+<hr>
+<h2>Ejercicio de prueba</h2>
+<form action="/action_page.php">
+	<fieldset>
+		<legend>Ejercicio de prueba</legend>
+	
+	<label for="email">Introduce tu e-mail</label>
+	<input type="text" name="email" pattern="[A-Z a-z 0-9]@[A-Z a-z 0-9].[A-Z a-z 0-9]{3}">
+	<input type="submit" value="Enviar">
+	</fieldset>
+</form>
+</body>
+</html>
