@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+abbr{
+	outline: 1px solid green;
+	text-decoration: none;
+	outline-offset: 1px;
+}
+b{
+	color: darkblue;
+	
+}
+blockquote{
+	text-indent: 25px;
+}
+body{
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	line-height: 25px ;
+	
+}
+cite{
+	color: darkblue;
+	font-weight: 900;
+	
+}
+del{
+	text-decoration: line-through darkred;
+	
+}
+div{
+	width: 80%;
+	background-color: lightgoldenrodyellow; 
+	box-shadow: 5px 5px 15px black;
+	margin: auto;
+	padding: 25px;
+}
+em{
+	color:darkred;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	background-color: darkred;
+	letter-spacing: 5px;
+	margin-bottom: 50px;
+}
+h2{
+	border-top: 3px dotted darkred;
+	border-bottom: 3px dotted darkred;
+	text-align: center;
+	margin: auto 15px auto 15px;
+	
+}
+h3{
+	text-align: center;
+	border-top: 3px dashed darkred;
+	border-bottom: 3px dashed darkred;
+	margin:  15px 55px;
+}
+hr{
+	width: 15%;
+	color: gray;
+	margin: 35px auto;
+	
+}
+i{
+	color:darkred;
+}
+ins{
+	text-decoration: none;
+	text-decoration: underline darkred;
+	
+}
+li{
+	list-style-image: url( ../lista-icono.png);
+	margin-left: 15px;
+	
+}
+mark{
+	border: 1px solid red;
+	padding: 10px 5px;
+	color: darkviolet;
+	text-shadow: 1px 3px 10px grey;
+}
+p{
+	padding: 15px;
+	border: 2px solid darkred;
+	border-radius: 15px;
+	background-color: lightyellow;
+	box-shadow: 5px 5px 10px grey;
+	text-align: justify;
+}
+q{
+	quotes: "«"  "»";
+}
+s{
+	text-decoration: line-through darkred;
+	
+}
+span {
+	padding: 15px;
+	border: 2px solid darkred;
+	border-radius: 15px;
+	background-color: lightyellow;
+	box-shadow: 5px 5px 10px grey;
+	margin: auto;
+	text-align: center;
+	display: block;
+}
+strong{
+	color:darkred;
+}
+sup{
+	color:darkred;
+}
+u{
+
+	text-decoration: underline blue;
+	
+}
+ul{
+	padding: 15px;
+	border: 2px solid darkred;
+	border-radius: 15px;
+	background-color: lightyellow;
+	box-shadow: 5px 5px 10px grey;
+	text-align: justify;
+	
+}
+

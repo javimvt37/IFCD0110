@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing: content-box;
+	text-decoration: none;
+	
+}
+.articulo{
+	border:1px solid;
+	padding: 15px;
+	width: 70%;
+	margin: auto;
+	background:lightyellow url(../img/chincheta-roja.png) no-repeat right top;
+	box-shadow: 10px 10px 15px grey;
+}
+.articuloDos{
+	border:1px solid;
+	padding: 15px;
+	width: 70%;
+	margin: auto;
+	background:lightyellow url(../img/chincheta-azul.png) no-repeat right top;
+	box-shadow: 10px 10px 15px grey;
+}
+.articuloTres{
+	border:1px solid;
+	padding: 15px;
+	width: 70%;
+	margin: auto;
+	background:lightyellow url(../img/chincheta-verde.png) no-repeat right top;
+	box-shadow: 10px 10px 15px grey;
+}
+.aside{
+	border:1px dashed red;
+	padding: 10px;
+	width: 70%;
+	margin: 20px auto;
+	background:lightyellow;
+	text-align: center;
+	
+	
+}
+.big{
+	font-size: 1.25em;
+	
+}
+
+.body{
+	background-image: url(../img/textura.jpg);
+	
+	
+}
+.boliche{
+	list-style-type: disc;
+	
+}
+.bordeIzqAzul{
+	border-left: 3px solid blue;
+}
+.bordeIzqRojo{
+	border-left: 3px solid darkred;
+}
+.bordeIzqVerde{
+	border-left: 3px solid darkgreen;
+}
+.boton{
+	color:white;
+	background-color: darkred;
+	padding: 5px;
+	display: block;
+	border: 1px solid yellow;
+	text-align: center;
+	
+}
+.borderNone{
+	border:hidden;
+}
+.contenedor{
+	display: block;
+	overflow: hidden;
+	margin:  0;
+	padding: 0px;
+}
+.cuaderno{
+	background:#ffffff url(../img/libreta-espiral.gif) repeat-y;
+	width: 90%;
+	margin: auto;
+	box-shadow: 10px 10px 15px grey;
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+	padding: 20px 50px;
+	max-width: 950px;
+	border:1px solid black;
+}
+.cyan{
+	color:darkcyan;
+	
+}
+.fondoCyan{
+	background-color: rgba(96,209,215,0.98);
+	
+}
+.fondoMorado{
+	background-color: rgba(139,118,201,1.00);
+}
+
+.fondoTrans{
+	background-color: rgba(131,132,72,0.17);
+}
+.fondoVerde{
+	background-color: darkseagreen;
+}
+.h1{
+	width: 80%;
+	background-color: lightyellow;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 10px groove red;
+	outline-offset: 5px solid green;
+	margin: auto;
+}
+.h2{
+	border-bottom: 10px groove red;
+	margin-top: 30px;
+	font-variant: small-caps;
+}
+.hr{
+	color: grey;
+	width: 30%;
+	margin: 20px auto;
+}
+
+.morado{
+	color:blueviolet;
+}
+.nav{
+	background-color: lightyellow;
+	border: 1px solid grey;
+	margin:  auto;
+	padding: 0;
+	display: block;
+	width: 80%
+}
+.negrita{
+	font-weight: bold;
+}
+.rojo{
+	color:darkred;
+	
+}
+.ul{
+	display: block;
+	overflow: hidden;
+	margin:  0;
+	padding: 10px;
+}
+.small{
+	font-size: 0.85em;
+	
+}
+.li{
+	list-style-type: none;
+	float: left;
+	display: block;
+	width: 33.33%;
+	text-align: center;
+}
+.lista{
+	padding: 5px;
+	
+	
+	margin:0px auto 10px auto;
+	text-align: justify;
+}
+
+.verde{
+	color:green;
+}
+.volver{
+	width: 120px;
+}
+
+
+
+

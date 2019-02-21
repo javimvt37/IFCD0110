@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>CSS border</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+<h1>Bordes CSS</h1>
+	<hr>
+<h2>Estilos borde</h2>
+<p>La border-stylepropiedad especifica qué tipo de frontera que se vea.</p>
+<p>Se permiten los siguientes valores:</p>
+<ul>
+	
+	<li><span class="negrita">dotted</span> - Define un borde de puntos</li>
+	<li><span class="negrita">dashed</span> - Define un borde punteado</li>
+	<li><span class="negrita">solid</span> - Define una frontera sólida</li>
+	<li><span class="negrita">double</span> - Define un borde doble</li>
+	<li><span class="negrita">groovez</span> - Define un borde acanalado 3D. El efecto depende del valor de border-color</li>
+	<li><span class="negrita">ridge</span> - Define un borde estriado 3D. El efecto depende del valor de border-color</li>
+	<li><span class="negrita">inset</span> - Define una frontera inserción 3D. El efecto depende del valor de border-color</li>
+	<li><span class="negrita">outset</span> - Define una frontera principio 3D. El efecto depende del valor de border-color</li>
+	<li><span class="negrita">none</span> - Define ninguna frontera</li>
+	<li><span class="negrita">hidden</span> - Define una frontera oculto</li>
+</ul>
+<p>La border-stylepropiedad puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo).</p>
+	<h2>Ejemplo</h2>
+	<p class="dotted">Borde de puntos</p>
+<p class="dashed">Borde punteado</p>
+	<p class="solid">Borde sólido</p>
+	<p class="double">Borde doble</p>
+	<p class="groove">Borde con acanalado</p>
+	<p class="ridge">Borde estriado</p>
+	<p class="inset">Borde</p>
+	<p class="outset">Borde por fuera</p>
+	<p class="none">Sin borde</p>
+	<p class="hidden">Borde oculto</p>
+	<div class="nota"><span class="negrita">Nota:</span> Ninguna de las otras propiedades de borde CSS se describen a continuación tendrá ningún efecto a menos que la <code>border-style</code> propiedad se establece</div>
+	<hr>
+<h2>Ancho del borde</h2>
+<p>La <code>border-width</code> propiedad especifica la anchura de los cuatro bordes.</p>
+<p>La anchura se puede establecer como un tamaño específico (en px, pt, cm, em, etc) o mediante el uso de uno de los tres valores predefinidos: fino, medio o grueso.</p>
+	<p>La <code>border-width</code> propiedad puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo).</p>
+	
+	<h2>Ejemplo</h2>
+<p class="uno">Ancho de borde 5px</p>
+<p class="dos">Ancho de borde medio</p>
+<p class="tres">Diferentes anchos de borde</p>
+	<hr>
+<h2>Color de borde</h2>
+<p>La border-colorpropiedad se utiliza para establecer el color de los cuatro bordes.</p>
+	<p>El color se puede ajustar por:</p>
+	<ul>
+	  <li>Nombre - indique un nombre de color, como "rojo"</li>
+	  <li>Hex - especificar un valor hexadecimal, como "# FF0000"</li>
+	  <li>RGB - especificar un valor RGB, así como "rgb (255,0,0)"</li>
+	  <li>transparente</li>
+</ul>
+	<p>La border-colorpropiedad puede tener de uno a cuatro valores (por el borde superior, borde derecho, borde inferior y el borde izquierdo). </p>
+	<p>Si border-colorno se establece, se hereda el color del elemento.</p>
+	<h2>Ejemplo</h2>
+	<p class="rojo">Borde rojo</p>
+	<p class="verde">Borde verde</p>
+	<p class="multicolor">Borde multicolor</p>
+<hr>
+<h2>Border - Lados individuales</h2>
+<p>De los ejemplos anteriores se han visto que es posible especificar una frontera diferente para cada lado.</p>
+<p>En CSS, también hay propiedades para especificar cada uno de los bordes (superior, derecho, inferior e izquierda): </p>
+<p>Diferentes estilos de borde:</p>
+	<p class="estilosBordes">p {<br>
+	    border-top-style: dotted; border-right-style: solid; border-bottom-style: dotted; border-left-style: solid;<br>
+    }</p>
+<p>Otra forma de realizar el mismo resultado:</p>
+    <p class="estilosBordesDos">p {<br>
+        border-style: dotted solid;<br>
+    }</p>
+<p>Pues así es como funciona:</p>
+    <p>Si la border-stylepropiedad tiene cuatro valores:</p>
+<ul>
+      <li><strong>-Estilo de borde: punteada doble sólida discontinua;</strong>
+        <ul>
+          <li>el borde superior está salpicado</li>
+          <li>borde derecho es sólida</li>
+          <li>borde inferior es el doble</li>
+          <li>borde izquierdo es discontinua</li>
+        </ul>
+      </li>
+    </ul>
+	<p id="ejemUno">p.ejemUno{<br>
+border-style: dotted solid double dashed;<br>
+}</p>
+    <p>Si la border-stylepropiedad tiene tres valores:</p>
+<ul>
+      <li><span class="negrita">frontera de estilo: punteada doble sólido;</span>
+        <ul>
+          <li>el borde superior está salpicado</li>
+          <li>fronteras derecha e izquierda son sólidos</li>
+          <li>borde inferior es el doble</li>
+        </ul>
+      </li>
+    </ul>
+    <p id="ejemDos">#ejemDos{<br>
+border-style: dotted solid double;<br>
+}</p>
+    <p>Si la border-stylepropiedad tiene dos valores:</p>
+<ul>
+      <li><span class="negrita">frontera de estilo: punteado sólido;</span>
+        <ul>
+          <li>bordes superior e inferior son de puntos</li>
+          <li>fronteras derecha e izquierda son sólidos</li>
+        </ul>
+      </li>
+    </ul>
+    <p id="ejemTres">#ejemTres{<br>
+border-style:dotted solid;<br>}</p>
+    <p>Si la border-stylepropiedad tiene un valor:</p>
+<ul>
+      <li><span class="negrita">frontera de estilo: de puntos;</span>
+        <ul>
+          <li>los cuatro bordes son de puntos</li>
+        </ul>
+      </li>
+    </ul>
+    <p id="ejemCuatro">#ejemCuatro{<br>
+border-style:dotted;<br>
+}</p>
+    <p>La border-stylepropiedad se utiliza en el ejemplo anterior. Sin embargo, también trabaja con border-width y border-color.</p>
+    <hr>
+<h2>Border - Abreviación de las propiedades</h2>
+<p>Como se puede ver en los ejemplos anteriores, hay muchas propiedades a tener en cuenta cuando se trata de fronteras.</p>
+    <p>Para acortar el código, también es posible especificar todas las propiedades de borde individuales en una sola propiedad.</p>
+    <p>La borderpropiedad es una propiedad abreviada para las siguientes propiedades de borde individuales:</p>
+    <ul>
+      <li>border-width</li>
+      <li>border-style (necesario)</li>
+      <li>border-color</li>
+    </ul>
+	<p class="variado">p. {
+  border: 5px solid red;
+}</p>
+	<h2>Ejemplo</h2>
+	<p>También puede especificar todas las propiedades de borde individuales para un solo lado:
+
+</p>
+<p class="unLado">p{
+
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}</p>
+<p class="unLadoInf">p.unLadoInf {
+  border-bottom: 6px solid red;
+  background-color: lightgrey;
+}</p>
+<hr>
+	<h2>Bordes Redondeados</h2>
+	<p>La propiedad border-radius se utiliza para añadir bordes redondeados a un elemento:</p>
+	
+</body>
+</html>

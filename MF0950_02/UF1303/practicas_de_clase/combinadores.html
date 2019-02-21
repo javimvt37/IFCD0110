@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Pseudo clases</title>
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	body{
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		font-size: 1.5em;
+		width: 80%;
+		margin: 10px auto;
+		border: 1px solid black;
+	}
+#div1 p {
+  background-color: yellow;
+}
+#div2 > p {
+  background-color: yellow;
+}
+#div3 + p {
+  background-color: yellow;
+}
+#div4 ~ p {
+  background-color: yellow;
+}
+	
+	h2 + p{
+		color:red;
+		
+	}
+/*------------------*/
+#div5 p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+	#div6 p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+		
+}
+	
+	#div7 p.intro::first-letter {
+  color: #ff0000;
+  font-size:200%;
+}  
+	
+#div8 p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+#div8 p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+#div9 h1::before {
+  content: url(img/iconos/whatsapp.png);
+}
+	#div10 h1::after {
+  content: url(img/iconos/whatsapp.png);
+}
+	/*-------------*/
+</style>
+</head>
+
+<body>
+<h1>CSS Combinadores</h1>
+<hr>
+<style>
+	.flexContainer{
+		display:flex;
+		flex-direction: row; /*column*/
+		flex-wrap: wrap;
+		background-color: darkblue;
+		justify-content: space-between;
+		align-items: flex-start;/*left o align-items:stretch*/
+		align-content: space-between;
+		}
+	
+	.flexContainer > div{
+		background-color: antiquewhite;
+		width: 23%;
+		
+	padding: 5px;
+		
+		font-size:0.7em;
+		
+	}
+	</style>
+	<h2>CSS Combinadores</h2>
+<hr>
+	
+<div class="flexContainer">
+	
+	<div><h2>Selector descendiente</h2>
+<p><code>div p { background-color: yellow;}</code></p>
+<div id="div1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p></div>
+	<div><h2>Selector hijo</h2>
+<p>div &gt; p {
+  background-color: yellow;
+}</p>
+<div id="div2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p></div>
+	<div><h2>Selector de hermanos adyacentes</h2>
+<p>div + p {
+  background-color: yellow;
+}</p>
+<p>Elementos de hermanos deben tener el mismo elemento padre, y "adyacente" significa "inmediatamente después".</p>
+<div id="div3">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p></div>
+	<div><h2>Selector general entre hermanos</h2>
+<p>div ~ p {
+  background-color: yellow;
+}</p>
+<p>Paragraph 1.</p>
+
+<div id="div4">
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+	<p>Paragraph 4.</p>
+
+	
+	</div></div>
+
+
+<h2>Selector descendiente</h2>
+<p><code>div p { background-color: yellow;}</code></p>
+<div id="div1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+<hr>
+<h2>Selector hijo</h2>
+<p>div &gt; p {
+  background-color: yellow;
+}</p>
+<div id="div2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span> <!-- not Child but Descendant -->
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+<hr>
+<h2>Selector de hermanos adyacentes</h2>
+<p>div + p {
+  background-color: yellow;
+}</p>
+<p>Elementos de hermanos deben tener el mismo elemento padre, y "adyacente" significa "inmediatamente después".</p>
+<div id="div3">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. Not in a div.</p>
+<p>Paragraph 4. Not in a div.</p>
+<hr>
+<h2>Selector general entre hermanos</h2>
+<p>div ~ p {
+  background-color: yellow;
+}</p>
+<p>Paragraph 1.</p>
+
+<div id="div4">
+  <code>Some code.</code>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+	<p>Paragraph 4.</p>
+	<hr><hr>
+<h1>Pseudo elementos</h1>
+	<hr>
+	<h2>La primera línea :: pseudo-elemento</h2>
+	<p>p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}</p>
+	<div id="div5">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae quia perferendis, dolor neque ad adipisci facere quidem esse veritatis eaque quas hic tempore! Cumque, beatae magni, hic fuga vel vero.</p></div>
+	<hr>
+	<h2>La :: pseudo-elemento first-letter</h2>
+	<p>p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}</p>
+	<div id="div6">
+		<p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+	</div>
+	<hr>
+	<h2>Los pseudo-elementos y clases CSS</h2>
+	<p>p.intro::first-letter {
+  color: #ff0000;
+  font-size:200%;
+}  </p>
+	<div id="div7">
+		<p class="intro">This is an introduction.</p>
+<p>This is a paragraph with some text. A bit more text even.</p></div>
+<hr>
+<h2>Múltiples pseudo-elementos</h2>
+<p>p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+<br>
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}</p>
+	<div id="div8"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, a laboriosam illum beatae, quas iste obcaecati. Deleniti impedit blanditiis temporibus, quisquam fuga ex sed qui ipsa, at distinctio aut quis!</p></div>
+	<hr>
+	<h2>CSS - La :: antes de pseudo-elemento</h2>
+	<p>h1::before {
+  content: url(img/iconos/whatsapp.png);
+}</p>
+	<div id="div9">
+		<h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1>
+<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+	</div>
+	<hr>
+	<h2>CSS - La :: después de pseudo-elemento</h2>
+	<p>h1::after {
+  content: url(img/iconos/whatsapp.png);</p>
+	<div id="div10">
+		<h1>This is a heading</h1>
+<p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+<h1>This is a heading</h1>
+<p><b>Note:</b> IE8 supports the content property only if a !DOCTYPE is specified.</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+ul{
+	margin:0;
+	padding: 0;
+}
+
+
+
+#aside{
+	background-color: cornflowerblue;
+	overflow: hidden;
+	width: auto;
+	margin: auto;
+	padding: 15px;
+}
+#aside #up{
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	
+}
+#aside #up li{
+	
+	display: inline-block;
+	width: 220px;
+	background-color: blanchedalmond;
+	margin: 10px;
+	padding: 5px;
+	border: 3px solid black;
+	text-align: center;
+	overflow: hidden;
+}
+#aside #up li img{
+	
+	width: 100%;
+}
+#aside #up li a{
+	text-decoration: none;
+	color: black;
+	
+}
+#aside #up li a:hover{
+	color:navy;
+	
+}
+#aside #down{
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	
+}
+#aside #down li{
+	
+	display: inline-block;
+	width: 153px;
+	height: 170px;
+	background-color: blanchedalmond;
+	margin: 10px;
+	padding: 5px;
+	border: 3px solid black;
+	text-align: center;
+	overflow: hidden
+}
+#aside #down li img{
+	
+	width: 100%;
+}
+#aside #down li a{
+	text-decoration: none;
+	color: black;
+}
+#aside #down li a:hover{
+	color:navy;
+	
+}
+body{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	font-family: Gotham, Helvetica Neue, Helvetica, Arial," sans-serif";
+	
+}
+#footer{
+	background-color: darkblue;
+	color: white;
+	overflow: hidden;
+	margin: 0;
+	padding: 15px;
+	text-align: center;
+	
+}
+#footer p{
+	margin-bottom: 10px;
+	
+}
+#footer > ul{
+	list-style-type: none;
+	text-align: center;
+	color:darkblue;
+}
+#footer ul > li{
+	border: 3px solid black;
+	display: inline-block;
+	background-color: blanchedalmond;
+	
+}
+#footer ul li ul{
+	margin: 0;
+	text-align: left;
+	padding: 10px 10px 30px 10px;
+	width: 250px;
+}
+#footer ul li ul li{
+	border:none;
+	display: block;
+	color:black;
+	line-height: 40px;
+}
+#footer ul li ul li a{
+	text-decoration: none;
+	color: black;
+}
+#footer ul li ul li a:hover{
+	color: navy;
+	
+}
+#footer ul li ul li img{
+	vertical-align: -0.5em;
+}
+#header{
+	background-color: darkblue;
+	color: white;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	
+}
+#header figure{
+	float: left;
+	margin: 0;
+	margin-right: -100px;
+	padding: 0;
+	
+}
+#header h1{
+	margin: 12px;
+	text-align: left;
+}
+#main{
+	margin: 0;
+	padding: 5px;
+	overflow: hidden;
+	background-color: gray;
+}
+#nav{
+	background-color:  cornflowerblue;
+	margin: 0;
+	padding: 15px;
+	
+}
+#nav ul{
+	list-style-type: none;
+	text-align: center;
+	padding: 10px;
+}
+#nav ul li{
+	display: inline-block;
+	
+}
+#nav ul li a{
+	padding: 5px 3px;
+	border: 2px solid blue;
+	background-color: white;
+	border-radius: 0.5em;
+	text-align: center;
+	text-decoration: none;
+}
+#nav ul li a:hover{
+	background-color: blue;
+	color:white;
+	border-color: white;
+}
+#logo{
+	width: 50%;
+
+	
+}
+
+#section{
+	margin: 10px;
+	padding: 10px;
+	background-color: cornflowerblue;
+}
+#section ul{
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	
+}
+#section ul li{
+	display: inline-block;
+	width: 300px;
+	padding: 50px;
+}
+
+#section ul li figure{
+	margin: 0;
+	padding: 0;
+}
+#section ul li img{
+	width: 100%;
+	margin: 0;
+}
+#section ul li article{
+	width: 100%;
+	overflow: hidden;
+	background-color: khaki;
+	float: left;
+	text-align: justify;
+	padding: 10px;
+	border: 3px solid black;
+	
+}

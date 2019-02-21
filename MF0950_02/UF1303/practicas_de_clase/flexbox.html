@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="es-Es">
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+	.flexContenedor{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+	}
+	.flexContenedor > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	/*----------------*/
+	.flexContenedor2{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+	}
+	.flexContenedor2 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor22{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: column;
+	}
+	.flexContenedor22 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	/*-----------*/
+	.flexContenedor3{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row-reverse;
+	}
+	.flexContenedor3 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor32{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: column-reverse;
+	}
+	.flexContenedor32 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	/*--------*/
+	.flexContenedor4{
+		display: flex; /*propiedad que define la flexión*/
+		flex-wrap: nowrap;
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+	}
+	.flexContenedor4 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor42{
+		display: flex; /*propiedad que define la flexión*/
+		flex-wrap: wrap; /*tambien se puede opner flex-flow:row wrap;*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+	}
+	.flexContenedor42 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor43{
+		display: flex; /*propiedad que define la flexión*/
+		flex-wrap: wrap-reverse;
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+	}
+	.flexContenedor43 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+/*-----------*/
+	.flexContenedor5{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.flexContenedor5 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor52{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.flexContenedor52 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor53{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.flexContenedor53 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor54{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		justify-content: flex-start;/*por defecto*/
+	}
+	.flexContenedor54 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor55{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.flexContenedor55 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	/*-----------*/
+	.flexContenedor6{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		align-items: center;
+		height: 200px;
+	}
+	.flexContenedor6 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor62{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		align-items: flex-start;
+		height: 200px;
+	}
+	.flexContenedor62 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor63{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		align-items: flex-end;
+		height: 200px;
+	}
+	.flexContenedor63 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+	}
+	.flexContenedor64{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		align-items: baseline;
+		height: 200px;
+	}
+	.flexContenedor64 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+		
+	}
+	.flexContenedor65{
+		display: flex; /*propiedad que define la flexión*/
+		align-content: flex-start;/* define la alineacion izquierda*/
+		background-color: currentColor;
+		flex-direction: row;
+		align-items: stretch;
+		height: 200px;
+	}
+	.flexContenedor65 > div{
+		padding: 10px;
+		width:  10%;
+		background-color: antiquewhite;
+		font-size: 3em;
+		text-align: center;
+		margin: 10px;
+		
+	}
+	/*-------------*/
+	 h3{
+		text-align: center;
+		background-color: darkred;
+		color:white;
+		padding: 5px;
+		width: 50%;
+		margin: auto;
+	}
+	.ejemplo{
+		width: 50%;
+		margin: auto;
+		background-color: aqua;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		flex-direction: row;
+		
+	}
+	.ejemplo > div{
+		width: 50%;
+		
+	}
+	
+	.ejemplo p{
+		text-align: center;
+		background-color: beige;
+		font-size: 1em;
+		padding: 10px;
+		height: 75px;
+		margin: 0;
+		
+	}
+</style>
+</head>
+
+<body>
+<h2>Display:flex</h2>
+<div class="flexContenedor">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+</div>
+<hr>
+<h2>Flex-direction: row/column</h2>
+<div class="flexContenedor2">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor22">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<hr>
+<h2>Flex-direction: reverse-row/reverse-column</h2>
+<div class="flexContenedor3">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor32">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<hr>
+<h2>Flex-wrap: nowrap/wrap/wrap-reverse</h2>
+<div class="flexContenedor4">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+</div>
+<br>
+<div class="flexContenedor42">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+</div>
+<br>
+<div class="flexContenedor43">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+</div>
+<hr>
+<h2>Justify-content: center/space-around/space-between/flex-start/flex-end</h2>
+<div class="flexContenedor5">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor52">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor53">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor54">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor55">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<hr>
+<h2>Align items: center/flex-start/flex-end</h2>
+<div class="flexContenedor6">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor62">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor63">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+	</div>
+	<br>
+	<div class="flexContenedor64">
+	<div>1</div>
+	<div style="line-height: 75px;">2</div>
+	<div>3</div>
+	
+</div>
+<hr>
+<div class="flexContenedor65">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+	</div>
+<hr>
+	<h2>Otrs ejemplos de lo mismo</h2>
+		
+		<h3>justify content</h3>
+	<div class="ejemplo">
+		
+		<div>
+		<p>flex-star</p>
+		<p>flex-end</p>
+		<p>center</p>
+		<p>space-between</p>
+		<p>space-arpund</p>
+		</div>
+		<div>
+			<div class="flexContenedor5">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor52">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor53">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor54">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+<br>
+<div class="flexContenedor55">
+	<div>1</div>
+	<div>2</div>
+	<div>3</div>
+	
+</div>
+		</div>
+	</div>
+</body>
+</html>

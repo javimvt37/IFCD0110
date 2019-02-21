@@ -1,0 +1,619 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	box-sizing: border-box;
+	font-size: 1em;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+::selection {
+  color: white;
+  background: black;
+}
+
+#menu1{
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu1 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: antiquewhite;
+}
+#menu1 ul li{
+	display: inline-block;
+	border: 1px solid rgba(170,49,51,1.00);
+	
+	background-color: aliceblue;
+}
+#menu1 ul li:hover{
+	
+	background-color: lightpink;
+	
+}
+#menu1 ul li a{
+	text-decoration: none;
+	/*border: 1px solid grey;*/
+	color: red;
+	padding: 10px;
+	width: 100px;
+	display: inline-block;
+	
+	
+}
+#menu1 ul li a:hover{
+	text-decoration: underline;
+	color: black;
+	
+	
+}
+/*-----------Segundo menú-----------*/
+
+#menu2{
+	width: 80%;
+	margin:auto;
+	height: auto;
+	border: 1px solid black;
+	overflow: hidden;
+	position: sticky;
+	top:0;
+
+}
+#menu2 ul{
+	
+	list-style-type: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+	background-color: bisque;
+	position: relative;
+	left: 25%;
+	
+	
+
+	
+	
+	
+}
+#menu2 ul li{
+	float: left;
+	margin: 10px 2px;
+	border: 1px solid red;
+	
+	position: relative;
+	right: 0;
+	background-color: aliceblue;
+	
+	
+}
+#menu2 ul li a{
+	display: block;
+	text-align: center;
+	padding: 10px;
+	width: 100px;
+	text-decoration: none;
+	
+	
+}
+#menu2 ul li a:hover{
+	background-color: darkgoldenrod;
+	
+	
+}
+#menu3{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu3 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+	text-align: center;
+	
+}
+#menu3 ul li{
+	display: inline;
+	
+    background-color: antiquewhite;
+
+}
+#menu3 ul li a{
+	text-decoration: none;
+	padding: 10px;
+	margin: -4px;
+	
+}
+
+.rojo{
+	background-color: darkred;
+	color:white;
+}
+#menu3 a:hover{
+	opacity:0.8;
+}
+.naranja{
+	background-color: darkgoldenrod;
+	color: white;
+}
+.verde{
+	background-color: darkgreen;
+	color: white;
+}
+.azul{
+	background-color: darkblue;
+	color:white;
+}
+.salmon{
+	background-color: darksalmon;
+	color: white;
+}
+
+/***lista bloques**/
+#menu4{
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu4 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+
+}
+#menu4 ul li{
+	
+	background-color: antiquewhite;
+	text-align: center;
+	
+	
+}
+#menu4 ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	border:1px solid black;
+	overflow: hidden;
+
+}
+/*Div juntos*/
+#padre{
+	overflow: hidden;
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+}
+#hijo1{
+	float: left;
+	width: 33.33%;
+	background-color: aqua;
+
+}
+#hijo2{
+	float: right;
+	width: 33.33%;
+	background-color: red;
+	
+
+}
+#hijo3{
+	margin: auto;
+	background-color: green;
+	width: 33.33%;
+	
+}
+#menu5{
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu5 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+
+}
+#menu5 ul li{
+	
+	background-color: antiquewhite;
+	text-align: left;
+	
+	
+}
+#menu5 ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	border:1px solid black;
+	overflow: hidden;
+
+}
+
+#menu6{
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu6 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+
+}
+#menu6 ul li{
+	
+	background-color: antiquewhite;
+	text-align: right;
+	
+	
+}
+#menu6 ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	border:1px solid black;
+	overflow: hidden;
+
+}
+#menu7{
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu7 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+
+}
+#menu7 ul li{
+	
+	background-color: antiquewhite;
+	text-align: center;
+	
+	
+}
+#menu7 ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	border:1px solid black;
+	overflow: hidden;
+
+}
+
+.iconos{
+	width: 25px;
+	height: 25px;
+	vertical-align: -0.25em;
+	margin: 0 0.75em;
+	
+	
+	
+}
+/*menu 8*/
+#menu8{
+	width: 80%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+	
+}
+#menu8 ul{
+	list-style-type: none;
+	text-align: center;
+	margin: 2;
+	padding: 2;
+}
+#menu8 ul li{
+	display: inline-block;
+	
+}
+#menu8 ul li a{
+	padding: 20px 10px;
+	background-color: lightblue;
+	margin-top: 10px;
+	
+}
+#menu8 ul li a:hover{
+	
+	background-color: rgba(0,0,0,0.19);
+
+	
+}
+#menu8 ul li a img{
+	vertical-align: -0.5em;
+}
+/*menu8.5*/
+#menu85{
+	
+	width: auto;
+	margin: auto;
+	border: 1px solid black;
+	padding: 10px;
+	position: fixed;
+	right: 0;
+	top: 10%;
+	
+}
+#menu85 ul{
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+}
+#menu85 ul li{
+	margin: 10px auto;	
+}
+#menu85 ul li a{
+	background-color: lightblue;
+	border: 1px solid black;
+	padding: 10px;
+	
+	
+}
+#menu85 ul li a:hover{
+	background-color: rgba(0,0,0,0.19);
+}
+#menu85 ul li a img{
+	vertical-align: middle;
+}
+
+/*Menú9*/
+#menu9{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu9 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333333;
+	overflow: hidden;
+	
+	
+}
+#menu9 ul li{
+	float:left;
+	border-right: 1px solid #bbb;
+}
+#menu9 ul li a{
+	
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	color: white;
+	
+}
+#menu9 ul li a:hover{
+	background-color: darkslateblue;
+}
+#menu9 ul li ul{
+	display: none;
+	position: absolute;/*-de esta forma no ocupa un lugar?-*/
+	background-color: darkblue;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+
+}
+#menu9 ul li:hover ul{
+	display: block;
+	
+}
+#menu9 ul li ul li{
+	float: none;
+}
+#menu9 ul li ul li a:hover{
+	background-color: blanchedalmond;
+	color: black;
+	
+}
+/*menu 10*/
+#menu10{
+	
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu10 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: antiquewhite;
+	width: 100px;
+
+	
+}
+
+#menu10 ul li{
+	
+	border-right: 1px solid #bbb;
+	position: relative;
+	
+	
+}
+#menu10 ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	
+}
+#menu10 ul li a:hover{
+	background-color: black;
+	color: white;
+	
+	
+}
+#menu10 ul li ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	background-color: aquamarine;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	
+}
+
+#menu10 ul li:hover > ul{
+	display:block;
+	
+}
+/*menu 11*/
+#menu11{
+	
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+#menu11 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: antiquewhite;
+	width: 100px;
+
+	
+}
+
+#menu11 ul li{
+	
+	border-right: 1px solid #bbb;
+	position: relative;
+	
+	
+	
+}
+#menu11 ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	
+}
+#menu11 ul li a:hover{
+	background-color: black;
+	color: white;
+	
+	
+}
+#menu11 ul li ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 100px;
+	background-color: aquamarine;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	
+}
+
+#menu11 ul li:hover > ul{
+	display:block;
+	
+}
+
+
+#menu11 ul li ul li ul{
+	width: 120px;
+
+}
+
+
+
+#menu11 ul li ul li ul li a{
+	background-color: bisque;
+	
+}
+/*menu12*/
+#menu12{
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 10px;
+	
+}
+#menu12 ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #333333;
+	overflow: hidden;
+	
+	
+	
+	
+}
+#menu12 ul li{
+	
+	float: left;
+	text-align: left;
+	border-right: 1px solid #bbb;
+}
+#menu12 ul li a{
+	
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	color: white;
+	
+	
+}
+#menu12 ul li a:hover{
+	background-color: darkslateblue;
+}
+#menu12 ul li ul{
+	
+	float: none;
+	display: none;
+	background-color: darkblue;
+	color: white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+
+}
+
+#menu12 ul li:hover > ul{
+	display: block;
+	
+}
+#menu12 ul li ul li{
+	
+	position: relative;
+	
+}
+#menu12 ul li ul li a:hover{
+	background-color: blanchedalmond;
+	color: black;
+	
+}
+#menu12 ul li ul li ul{
+	
+	position: absolute;
+	top:0;
+	left: 110px;
+	background-color: aliceblue;
+}
+#menu12 ul li ul li ul a{
+	
+	color: black;
+}
+

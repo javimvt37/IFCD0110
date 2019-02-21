@@ -11,143 +11,20 @@
         <meta name="title" content="Confección y publicación de páginas web">
         <meta name="author" content="Javier Molina">
 
-        <style>
-           body{
-				
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			   	width: 80%;
-                
-                /* margin arriba y abajo no tiene y derecha e izquierda en auto "se centra de la misma forma de iz y derecha, auqneu cambie de formato o tamaño" */
-                margin: 0 auto;
-                }
+        
+         
 			
-		
-            h1,h2,h3,h4,h5,h6{
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            /* div{
-               /*  background-color: #f1f1f1; */
-               
-                /* Al poner dos numeros el primero es el margen de arriba y abajo y el segundo izq y derecha ejem: margin:10 5; */
-                /* margin: 20px;
-                padding: 20px;
-                } */
-                /*estilo para los div que contienene notas */
-            .nota{
-                background-color: #ffffcc;
-                border-left: 6px solid #ffeb3b;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-left: 10px;
-                padding-right: 5px;
-                
-                }
-            table, th, td {
-                border: 1px solid black;
-                 }
-            hr{
-                border: 1px solid #eee;
-                /* border-style: dotted; */
-                
-            }
-            code{
-                color:crimson;
-                background-color: #f1f1f1;
-                padding-left: 4px;
-                padding-right: 4px;
-                font-size: 110%;
-            }
-            /* Siempre en empieza en minuscula, sin espacions ni simbolos */
-            .etiquetasHTML{
-                background-color: #f1f1f1;
-                border: 1px solid #cccccc;
-                font-size: 24px;
-                padding: 16px;
-            }
-            /* Estilo anidado: etiquetas span dentro de code */
-            code span{
-                color:mediumblue;
-                }
-            code span span{
-                color:brown;
-            }
-            code span span span{
-                color:red;
-            }
-            .code{
-                margin-top: 16px;
-                margin-bottom: 16px;
-                background-color: #fff;
-                /* 8px arriba y abajo y 12 derecha e izquierda */
-                padding: 8px 12px;
-                border-left: 4px dotted #4CAF50;
-                /* Seria color del texto */
-                color:black;
-            }
-            .ejemplo{
-                background-color: #f1f1f1;
-                padding: 8px 16px;
-                margin: 20px 0;
-                /* Caja sombreada; primero se especifican los lados donde sale la sombra, segundo rgba"a"alpha" por la transparencia"y por ultimo crea otra sombra superpuesta */
-                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-            }
-			footer{
-				
-				border:5px solid #EB8166;
-				border-radius: 10px;
-				background-color: #F0A490;
-				box-shadow: 5px 5px 5px #E34c26;			
-				
-			}
-			.aside{
-				background-color: burlywood;
-				width: 200px;
-				float: left;
-				margin: 15px;
-			}
-			nav a:link {
-  color: green; 
-  background-color: transparent; 
-  text-decoration: none;
-}
-			
-nav a:visited {
-  color: red;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-nav a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-	
-				}
-			.logo{
-				box-shadow:  none;
-				width: 100%;
-				
-			}
-			.html{
-				width: 300px
-		
-			}
-			
-        </style>
+        
         
         <script></script>
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+     
         <script type="text/javascript" src="js/funciones.js"></script>
 
         <link rel="icon" type="image/png" href="img/imagen.png">
         <link rel="icon" type="image/gif" href="img/imagen.gif">
         <link rel="icon" type="image/vnd.microsoft.icon" href="img/imagen.ico"> 
+        
         
         <!--Etiqueta base, en este ejemplo indica mi direccion de la carpeta donde alojo imahgenes y asi me es mas comodo para no indicar siempre la direccion completa, solo escribir el nombre de la imagen-->
          <!-- <base href="https://www.mipagina.com/img" target="_blank"> --> 
@@ -160,12 +37,13 @@ nav a:active {
         <h1 id="intro">HTML Introducción</h1>
         <hr>
         </header>
-        <nav>
+        <nav class="nav1">
 		<a href="index.html">Índice</a> | <a href="introduccion.html">Introducción</a> | <a href="formato.html">Formato</a> | <a href="bloques.html">Bloques</a> | <a href="tablas.html">Tablas</a> | <a href="listas.html">Listas</a> | <a href="multimedia.html">Multimedia</a>
         <hr>
 		</nav>
        <aside>
-        <ul>
+       <nav>
+        <ul class="nav2">
 			<li><a href="#queeshtml">¿Qué es HTML?</a></li>
 			<li><a href="#estructura">Estructura básica de un documento HTML</a></li>
 			<li><a href="#ej">Ejemplo de las etiquetas básicas</a></li>
@@ -174,6 +52,7 @@ nav a:active {
 			<li><a href="#versiones">Versiones de HTML</a></li>
 			<li><a href="#estructurados">Estructura de una página HTML</a></li>
 		</ul>
+       </nav>
         <hr>
 		</aside>
            <main>
@@ -183,7 +62,7 @@ nav a:active {
     	
     	<img src="img/html-formatos.png" class="html"><figcaption>HTML5</figcaption>
     </figure>
-                <p> HTML es el lenguaje de marcado estándar para la creación de páginas Web.</p>
+              
         
                <ul>
                    <li><strong>CSS</strong> significa <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets (Hojas de Estilos en Cascada)</li>
@@ -212,8 +91,8 @@ nav a:active {
                             <span>&lt;<span>/head</span>&gt;</span><br>
                             <span>&lt;<span>body</span>&gt;</span><br>
                             
-                            <span>&lt;<span>h1</span>&gt;<span style="color:black;">Mi primer encabezado</span>&lt;<span>/h1</span>&gt;</span><br>
-                            <span>&lt;<span>p</span>&gt;<span style="color:black">Mi primer párrafo</span>&lt;<span>/p</span>&gt;</span><br>
+                            <span>&lt;<span>h1</span>&gt;<span class="textB">Mi primer encabezado</span>&lt;<span>/h1</span>&gt;</span><br>
+                            <span>&lt;<span>p</span>&gt;<span class="textB">Mi primer párrafo</span>&lt;<span>/p</span>&gt;</span><br>
                             
                             <span>&lt;<span>/body</span>&gt;</span><br>
                             <span>&lt;<span>/html</span>&gt;</span><br>
@@ -319,19 +198,18 @@ nav a:active {
 			   </article>
 			   <article>
 		<h2 id="estructurados">Estructura de una página HTML</h2>
-                <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
-                    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
-                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
-                    </div>
-                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;meta charset="UTF 8"&gt;
+                <div id="divPadre">&lt;html&gt;
+                    <div id="divHead">&lt;head&gt;
+                    <div id="divTitle">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/estilos.css&quot;&gt;</div>
+                    <div id="divMeta">&lt;meta charset="UTF 8"&gt;
                     </div>
                     &lt;/head&gt;
                     </div>
-                    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
-                    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
-                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
-                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
-                    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+                    <div id="divBody">&lt;body&gt;
+                    <div id="divContent">
+                    <div id="divH1">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+                    <div id="divP">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+                    <div id="divPa">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
                     </div>
                     &lt;/body&gt;
                     </div>
@@ -347,7 +225,7 @@ nav a:active {
 			   </article>
 		</main>
         <footer>
-			<ul style="list-style-type: none;">
+			<ul>
 				<li><a href="#">Política de cookies</a></li>
 				<li><a href="#">Política de privacidad</a></li>
 				<li><a href="#">Aviso legal</a></li>
