@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+a{
+	text-decoration: none;
+	
+}
+
+body{
+	width: 90%;
+	margin:10px auto;
+	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	font-size: 0.75em;
+}
+form{
+	width: 50%;
+	margin: auto;
+	
+}
+.form{
+	background-color: lightgray;
+	padding: 10px;
+	
+}
+legend{
+	text-align: center;
+	background-color: lightgray;
+	padding: 15px;
+}
+form >div{
+	display: flex;
+	justify-content: space-between;
+	
+	
+	
+}
+form>div>div{
+	display: flex;
+	flex-flow: column wrap;
+}
+.facebook{
+	background-color: #3B5998;
+	color: white;
+	padding: 7px 20px;
+	margin-bottom: 5px;
+}
+.twitter{
+	color:white;
+	background-color: #55ACEE;
+	padding: 7px 20px;
+	margin-bottom: 5px;
+	
+}
+.google{
+	color: white;
+	background-color: #DD4B39;
+	padding: 7px 20px;
+	margin-bottom: 5px;
+}
+img{
+	width: 10px;
+	vertical-align: 0px;
+}
+#medio{
+	text-align: center;
+	vertical-align: middle;
+	border-left: 1px solid gray;
+	position: relative;
+	
+}
+#medio>div{
+	vertical-align: middle;
+	border:1px solid gray;
+	border-radius: 1em;
+	position: absolute;
+	top:33%;
+	left: -7.5px;
+	background-color: lightgray;
+	font-size: 0.5em;
+	padding: 3px;
+	text-align: center;
+	
+	
+}
+input[type=submit]{
+	border: none;
+	background-color: green;
+	color: white;
+}
+.registrarse{
+	background-color: rgba(80,80,80,1.00);
+	padding: 20px;
+	
+}
+.registrarse a{
+	color: white;
+}

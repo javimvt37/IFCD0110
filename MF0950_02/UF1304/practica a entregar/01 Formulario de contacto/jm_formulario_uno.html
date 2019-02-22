@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Formulario de contacto</title>
+<link rel="stylesheet" href="css/formulario.css" type="text/css">
+</head>
+
+<body>
+<form action="/action_page.php" autocomplete="off">
+	<legend>Formulario de contacto</legend>
+	<div id="fondo"> 
+	<label for="nombre">Nombre<span>*</span></label><br>
+	<input type="text" id="nombre" placeholder="Tu nombre.." required pattern="[A-Z a-z 0-9]"><br>
+	
+	<label for="apellido" pattern="[A-Z a-z 0-9]">Apellidos<span>*</span></label><br>
+	<input type="text" id="apellido" placeholder="Tus apellidos.." required><br>
+	<label for="telefono">Teléfono<span>*</span></label><br>
+	<input type="text" id="telefono" placeholder="Tu teléfono.." maxlength="9" pattern="[0-9]{9}" required title="Sólo números"><br>
+	<label for="email">Correo electrónico<span>*</span></label><br>
+	<input type="text" id="email" placeholder="Tu correo electrónico.." pattern="[A-Z a-z 0-9][@][A-Z a-z 0-9][.][A-Z a-z 0-9]" required><br>
+	<label for="consulta">Consulta<span>*</span></label><br>
+	<textarea id="consulta" placeholder="Tu consulta.." required rows="15"></textarea><br>
+	<input type="checkbox" required>Acepto los términos y <a href="#">condiciones de privacidad</a><br>
+	<input type="submit" value="Enviar">
+	</div>
+	
+</form>
+</body>
+</html>
