@@ -7,16 +7,27 @@ a{
 
 body{
 	width: 90%;
-	margin:10px auto;
+	margin:20px auto;
 	font-family: Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
 	font-size: 0.75em;
 }
 form{
-	width: 50%;
+	display: flex;
+	flex-flow: column wrap;
+	/*width: 80%;*/ /* para aplicar el mismi ejercicio con width y que funcione, descomentar*//* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
+	width: 70%;
 	margin: auto;
 	
 }
-.form{
+.form{  
+	display: flex;
+	flex-flow: row wrap;
+	background-color: lightgray;
+	padding: 10px;
+	
+}
+.form > div {  
+
 	background-color: lightgray;
 	padding: 10px;
 	
@@ -26,71 +37,220 @@ legend{
 	background-color: lightgray;
 	padding: 15px;
 }
-form >div{
+form > div{
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
 	
 	
 	
+	
+}
+#redes{
+	display: flex;
+	flex-flow: row wrap;
+	
+}
+#datos{
+	display: flex;
+	flex-flow: row wrap;
 }
 form>div>div{
+		
 	display: flex;
 	flex-flow: column wrap;
 }
 .facebook{
 	background-color: #3B5998;
 	color: white;
-	padding: 7px 20px;
+	padding: 10px 20px;
 	margin-bottom: 5px;
+	/*width: 250px;*/ /* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
+	border-radius: 0.25em;
 }
 .twitter{
+	/*width: 250px;*/ /* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
 	color:white;
 	background-color: #55ACEE;
-	padding: 7px 20px;
+	padding: 10px 20px;
 	margin-bottom: 5px;
+	border-radius: 0.25em;
 	
 }
 .google{
+	/*width: 250px;*/ /* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
 	color: white;
 	background-color: #DD4B39;
 	padding: 7px 20px;
 	margin-bottom: 5px;
+	border-radius: 0.25em;
 }
 img{
 	width: 10px;
 	vertical-align: 0px;
 }
 #medio{
+	display: flex;
+	flex-flow: column wrap;
 	text-align: center;
 	vertical-align: middle;
 	border-left: 1px solid gray;
 	position: relative;
+	margin-left: 20px;
 	
 }
 #medio>div{
+	
 	vertical-align: middle;
 	border:1px solid gray;
-	border-radius: 1em;
+	border-radius: 25px;
 	position: absolute;
-	top:33%;
-	left: -7.5px;
+	top:40%;
+	left: -10px;
 	background-color: lightgray;
-	font-size: 0.5em;
-	padding: 3px;
+	font-size: 1em;
+	padding: 1px 4px;
 	text-align: center;
 	
+	
+}
+#medio>div>span{
+	display: none;
 	
 }
 input[type=submit]{
 	border: none;
 	background-color: green;
 	color: white;
+	border-radius: 0.25em;
+	/*width: 294px;*/ /* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
+	padding: 7.5px 20px;
+	margin-bottom: 5px;
+}
+input[type=text]{
+	/*width: 250px;*/ /* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
+	padding: 7.5px 20px;
+	margin-bottom: 5px;
+}
+input[type=password]{
+	/*width: 250px;*/ /* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
+	padding: 7.5px 20px;
+	margin-bottom: 5px;
 }
 .registrarse{
 	background-color: rgba(80,80,80,1.00);
 	padding: 20px;
+	justify-content: space-around;
 	
 }
 .registrarse a{
 	color: white;
 }
+@media screen and (max-width: 820px){
+	
+	
+	#medio{
+		border: none;
+		margin: 0px;
+		
+		
+		
+			
+	}
+	#medio>div{
+		border:none;
+		top: 0;
+		position: relative;
+		padding: 0px;
+		background-color: rgba(255,255,255,0.00)
+	}
+	#medio> div>span{
+		display: inline;
+	}
+	.form{
+		display: flex;
+		flex-flow: column wrap;
+		
+	}
+	
+	form >div{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+		
+	
+	
+	
+}
+	.registrarse{
+		display: flex;
+		flex-flow:column  wrap;
+		padding: 0;
+		
+	}
+	.registrarse a{
+		text-align: center;
+		padding: 10px 0px;
+	
+	}
+	
+}
+/* para aplicar el mismi ejercicio con width y que funcione, descomentar*/
+
+/*@media screen and (max-width: 1000px){
+	
+	
+	.facebook, .twitter, .google{
+		width: auto;
+	}
+	input[type=password], input[type=text], input[type=submit]{
+		width: auto;
+	}
+	
+	
+	#medio{
+		border: none;
+		margin: 0px;
+		
+		
+		
+			
+	}
+	#medio>div{
+		border:none;
+		top: 0;
+		position: relative;
+		padding: 0px;
+		background-color: rgba(255,255,255,0.00)
+	}
+	#medio> div>span{
+		display: inline;
+	}
+	.form{
+		display: flex;
+		flex-flow: column wrap;
+		
+	}
+	
+	form >div{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+		
+	
+	
+	
+}
+	.registrarse{
+		display: flex;
+		flex-flow:column  wrap;
+		padding: 0;
+		
+	}
+	.registrarse a{
+		text-align: center;
+		padding: 10px 0px;
+	
+	}
+	
+}*/

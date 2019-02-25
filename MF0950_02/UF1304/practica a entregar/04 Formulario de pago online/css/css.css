@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	width: 80%;
+	
+	margin: auto;
+	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+}
+#formPadre {
+	padding: 15px;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+}
+form{
+	background-color: lightgray;
+	
+}
+#formIzq{
+	display: flex;
+	flex-flow: column wrap;	
+}
+#formDer{
+	display: flex;
+	flex-flow: column wrap;
+}
+img{
+	width: 25px;
+	vertical-align: -4px;
+}
+input[type=radio]{
+	display: inline;
+	
+}
+#boton{
+	display: inline-block;
+	width: 100%;;
+	margin: auto;
+	background-color: green;
+	color: white;
+	text-decoration: none;
+	
+	text-align: center;
+}

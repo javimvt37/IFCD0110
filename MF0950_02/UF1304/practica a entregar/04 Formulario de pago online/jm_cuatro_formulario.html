@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link rel="stylesheet" href="css/css.css" type="text/css">
+</head>
+
+<body>
+<h2>Formulario de pago</h2>
+<form action="/action_page.php" id="formPadre">
+	<div id="formIzq">
+		<legend>Dirección de Envio</legend>
+		<label for="nombre">Nombre completo</label>
+		<input type="text" id="nombre">
+		<label for="email">Email</label>
+		<input type="text" id="email">
+		<label for="direccion">Dirección</label>
+		<input type="text" id="direccion">
+		<label for="ciudad">Ciudad</label>
+		<input type="text" id="ciudad">
+		<div>
+			<input type="text">
+			<input type="text">
+		</div>
+		<input type="checkbox">Acepta los términos y <a href="#">condiciones de privacidad</a>
+	</div>
+	<div id="formDer">
+	<legend>Pago</legend>
+		<label for="">Selecciona una tarjeta</label>
+		<div>
+		<input type="radio" name="tarj" value="visa"><img src="visa.png" alt="visa">
+		<input type="radio" name="tarj" value="master"><img src="mastercard.png" alt="mastercard">
+		<input type="radio" name="tarj" value="american"><img src="american-express.png" alt="american">
+		<input type="radio" name="tarj" value="discover"><img src="discover.png" alt="discover">
+		</div>
+		<label for="titular">Titular de la tarjeta</label>
+		<input type="text" id="titular" placeholder="Indica el titular de la tarjeta">
+		<label for="numero">Número de tarjeta de crédito</label>
+		<input type="text" id="numero">
+		<label for="">Exp mes</label>
+		<input type="">
+		<div>
+			<input type="text">
+			<input type="text">
+		</div>
+	</div>
+	<a href="#" id="boton">Continuar con el pago</a>
+</form>
+</body>
+</html>
