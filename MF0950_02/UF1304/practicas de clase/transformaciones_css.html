@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body>
+<h1>Las transformaciones CSS</h1>
+<p>La transformpropiedad se aplica una transformación 2D o 3D a un elemento. Esta propiedad le permite rotar, escalar, mover, inclinación, etc., elementos.</p>
+<h2>El translate () Método</h2>
+<p>El translate()método se mueve un elemento desde su posición actual (de acuerdo con los parámetros dados para el eje X y el eje Y).</p>
+<p>El ejemplo siguiente mueve el elemento &lt;div&gt; 50 píxeles a la derecha, y 100 píxeles hacia abajo desde su posición actual:</p>
+	<p>
+	  <style>
+		  .contenedor{
+			 display: flex;
+			 flex: row wrap;
+		  }
+		#div{
+			width:300px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+			
+			
+			
+			}
+		#divTranslate{
+			width:300px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+			-ms-transform: translate(-50px,50px);
+			-webkit-transform: translate(-50px,50px);
+			transform: translate(-50px,50px);
+		}
+	  </style>
+</p>
+<div class="contenedor">
+	<div id="div">
+	  div
+    </div><br>
+    <div id="divTranslate">div translate</div>
+</div>
+    <hr>
+<h2>El rotate () Método</h2>
+    <p>El rotate()método hace girar un sentido horario elemento o antihorario según un grado dado.</p>
+    <style>
+		
+		#div2{
+			width:100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+		}
+		#divRotate{
+			width:100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+			
+			-ms-transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			transform: transform: rotate(-45deg);
+			
+		}
+	
+		
+	</style>
+<div class="contenedor">
+		<div id="div2">div</div>
+		<div id="divRotate" class="">div rotate</div>
+	</div>
+	<hr>
+<h2>La escala () Método</h2>
+<p>Las scale()método aumenta o disminuye el tamaño de un elemento (de acuerdo con los parámetros dados para la anchura y altura).</p>
+<style>
+	#div3{
+		width:100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+	}
+	#divScale{
+		width:100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+		-ms-transform: scale(2,3);
+			-webkit-transform: scale(1,0.5);
+			transform: transform: scale(1,0.5);;
+	}
+	</style>
+<div class="contenedor">
+		<div id="div3">Div</div>
+		<div id="divScale">Scale</div>
+	</div>
+	<hr>
+<h2>El () Método skewX y skewY</h2>
+<p>El skewX()método sesga un elemento a lo largo del eje X por el ángulo dado.</p>
+<p>El skewY()método sesga un elemento a lo largo del eje Y por el ángulo dado.</p>
+<style>
+	#div4{
+		width:100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+	}
+	#divSkewx{
+		width:100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+			-ms-transform: skewX(20deg); /* IE 9 */
+  			-webkit-transform: skewX(20deg); /* Safari */
+  			transform: skewX(20deg); /* Standard syntax */
+	}
+	</style>
+<div class="contenedor">
+	<div id="div4"></div>
+	<div id="divSkewx"></div>
+	</div>
+	<hr>
+<h2>La matriz () Método</h2>
+<p>El matrix()método combina todo el 2D métodos de transformada en una sola.</p>
+<p>El método de la matriz () tomar seis parámetros, que contiene funciones matemáticas, que le permite rotar, escala, movimiento (traducir), y el sesgado elementos.</p>
+<p>Los parámetros son los siguientes: matriz (scaleX (), skewY (), skewX (), scaleY (), translateX (), translateY ())</p>
+<style>
+	#div5{
+		width:100px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+	}
+	#divMatrix{
+		width:100px;
+			height: 100px;
+				background-color: yellow;
+			border: 1px solid black;
+			-ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+	 -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+  	transform: matrix(1, -0.3, -0.3, 3	, 10, 10);
+		
+	}
+	</style>
+	<div class="contenedor">
+		<div id="div5"></div>
+		<div id="divMatrix"></div>
+	</div>
+</body>
+</html>
