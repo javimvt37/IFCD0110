@@ -7,6 +7,26 @@ body{
 	margin: auto;
 	font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
 }
+input[type=submit]{
+	
+	display: inline-block;
+	width: 100%;;
+	margin: auto;
+	padding: 7px;
+	background-color: green;
+	color: white;
+	text-decoration: none;
+	border: 0;
+	text-align: center;
+}
+.dosCasillas{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+#ex{
+	width: 200px;
+}
 #formPadre {
 	padding: 15px;
 	display:flex;
@@ -17,30 +37,66 @@ body{
 form{
 	background-color: lightgray;
 	
+	margin: auto;
+	
 }
 #formIzq{
+	width: 45%;
 	display: flex;
-	flex-flow: column wrap;	
+	flex-flow: column wrap;
+}
+#formIzq img{
+	width: 15px;
+	vertical-align: -2px;
 }
 #formDer{
+	width: 45%;
 	display: flex;
 	flex-flow: column wrap;
 }
 img{
-	width: 25px;
-	vertical-align: -4px;
+	width: 40px;
+	vertical-align: middle;
+}
+input{
+	padding: 5px;
+	margin-bottom: 10px;
 }
 input[type=radio]{
 	display: inline;
 	
 }
-#boton{
-	display: inline-block;
-	width: 100%;;
-	margin: auto;
-	background-color: green;
-	color: white;
-	text-decoration: none;
+
+legend{
+	font-weight: bold;
+}
+.linea{
+	display: inline;
+}
+.rad{
+	margin-bottom: 7.5px;
+}
+select{
+	padding: 5px;
+	margin-bottom: 10px;
+}
+@media only screen and (max-width: 900px) {
+  
+	#formPadre {
 	
-	text-align: center;
+	display:flex;
+	flex-flow: column wrap;
+	
+	}
+	#formIzq{
+		width: 100%;
+	}
+	#formDer{
+		width: 100%;
+	}
+	.dosCasillas{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
 }
