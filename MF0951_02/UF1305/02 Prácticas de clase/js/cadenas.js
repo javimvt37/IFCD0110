@@ -107,7 +107,84 @@ function repetir(){
 	alert(mensaje.repeat(3));
 }
 //Metodo replace()
-function replace( ){
-	var mensaje=prompt("Tu color favorito es el rojo");
+function reemplazar(){
 	
+	var mensaje=prompt("¿Tu color favorito es el rojo? Si no es así escribe tu color favorito");
+	
+	
+	var favorito=mensaje.replace("rojo",mensaje);
+	var mensajeDos=alert("Tu color favorito es el "+favorito);
+	
+}
+//Metodo search()
+function buscar(){
+	var mensaje=prompt("Introduce tu correo electrónico");
+	var busqueda=mensaje.search(/@/);
+	
+	var punto = mensaje.search(/\./);
+	if (busqueda===-1){
+	alert("No has escrito el caracter @");
+		}else if (punto===-1){
+		alert("No has escrito el caracter .");
+	}else{
+		alert("El caracter \"@\" ha sido encontrado en la posición: "+busqueda);
+	}
+}
+
+//método slice()
+function extraer(){
+	var mensaje=prompt("Introduce tu correo electrónico");
+	var posP=mensaje.search(/\./);
+
+	var posA=mensaje.search(/@/);
+	
+	
+	var mensajeDos=alert("Nombre: "+mensaje.slice(0,posA)+"\n"+"Domininio: "+mensaje.slice(posA+1, posP)+"\nExtension: "+mensaje.slice(posP+1));
+}
+//método split()
+function dividirMatriz(){
+	var mensaje=prompt("Introduce un texto y te lo divido en matriz");
+	var dividir=mensaje.split(" ");
+	alert(dividir);
+}
+//método startsWith()
+function empiezaPor(){
+	var mensaje=prompt("Introduce tu página web");
+	var comprobar=mensaje.startsWith("https://www.");
+	if (comprobar==false){
+		alert("Introduce correctamente tu página web, ha de empezar como https://www.");
+		var mensaje=prompt("Introduce tu página web");
+		
+		
+	}else{
+		
+		alert("Tu página web es: "+mensaje);
+	}
+}
+//método substr()
+function substraer(){
+	var mensaje=prompt("Introduce tu correo electrónico");
+	var posP=mensaje.search(/\./);
+
+	var posA=mensaje.search(/@/);
+	var dominio=mensaje.slice(posA+1,posP);
+	var extension=dominio.length;
+	
+	var mensajeDos=alert("Nombre: "+mensaje.substr(0,posA)+"\n"+"Domininio: "+mensaje.substr(posA+1, extension)+"\nExtension: "+mensaje.substr(posP+1));
+}
+//metodo substring()
+function recortar(){
+	var mensaje=prompt("Introduce tu correo electrónico");
+	var posP=mensaje.search(/\./);
+
+	var posA=mensaje.search(/@/);
+	
+	
+	var mensajeDos=alert("Nombre: "+mensaje.substring(0,posA)+"\n"+"Domininio: "+mensaje.substring(posA+1, posP)+"\nExtension: "+mensaje.substring(posP+1));
+}
+	
+//metodo trim()
+function espacios(){
+	var mensaje=prompt("Introduce tu email con espacios");
+	alert(mensaje);
 }
