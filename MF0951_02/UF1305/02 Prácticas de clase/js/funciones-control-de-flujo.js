@@ -118,16 +118,83 @@ function switchCase(){
 //for
 function bucleFor(){
 	
-	
+	var textoUno=""
 	for(a=0;a<=10;a++){
-		alert(a+" *5= "+a*5);
-	}
-	var colores=[rojo, verde, azul];
-	var texto="";
-	for(b=0;b<colores.length;b++){
+		textoUno+=(a+" *5= "+a*5+"\n");
 		
-		texto+=colores[b]+"\n";
-		alert(texto);
 	}
+	alert(textoUno);
+	var colores=["rojo", "verde", "azul"];
+	var texto="";
+	for(i=0;i<colores.length;i++){
+		
+		texto+=colores[i]+"\n";
+		
+	}
+	alert(texto);
+}
+
+//while
+
+function mientrasWhile(){
+	
+	var i=0;
+	var texto="";
+	while(i<=10){
+		
+		texto+="El número i es: "+i+"\n";
+		i++;
+	}
+	alert(texto);
+	/*var numero=parseInt(prompt("Introduce un numero primo"));
+	var numeros=new Number();
+	var primo=numeros-numero;
+	var dividir=numero/;
+	alert(dividir);*/
+}
+
+//do while
+function hacerMientrasDoWhile(){
+	
+	var texto="";
+	i=0;
+	do{
+		texto+="El número de i es: "+i+"\n";
+		i++;
+	}while(i<=10);
+	alert(texto);
+}
+
+//break
+function romperBucle(){
+	i=0;
+	texto="";
+	while(i<=10){
+		i++;
+		texto+="El valor de i es:"+i+"\n";
+		if(i===5){break;}
+		
+	}
+	alert(texto);
+}
+//continue
+function continuarBucle(){
+	var numero=parseInt(prompt("Introduce un número del 1 al 10 que no quieres que se muestre"));
+	var i=-1;
+	var texto="";
+	
+	
+	while(i<=10){
+		
+		i++;
+		if (i===numero){continue;}
+		texto+="Muestro el valor de i hasta 10 menos el "+numero+": i="+i+"\n";
+		
+		
+		
+	}
+	alert(texto);
 	
 }
+	
+	
