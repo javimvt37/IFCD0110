@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+#aceptar{
+	position: absolute;
+	left: 50%;
+	border: 0;
+	border-radius: 5em;
+	padding: 5px 10px 5px 10px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+#cruz:hover{
+	
+color: red;
+}
+
+	#fijar{
+		position: fixed;
+		bottom: 0;
+  		left: 0;
+  		right: 0;
+		background-color: rgba(0,0,0,0.47);
+		height: 100%;
+		width: 100%;
+	}
+	#cookie{
+		background-color: rgba(0,0,0,0.80);
+		padding: 40px;
+		color: white;
+		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
+		text-align: justify;
+		position: absolute;
+		bottom: 0px;
+		
+	}
+	#x{
+		position: absolute;
+		top: 0px;
+		right: 15px;
+		margin-top: 5px;
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+		
+		
+		
+	}
+#cruz{
+	font-size: 2em;
+	
+}
+
+
+	#enlace{
+		color:rgba(246,253,171,1.00);
+		text-decoration: none;
+	}
+#enlace:hover{
+	color: rgba(145,145,224,1.00);
+}
+#enlace:visited{
+	color: rgba(203,120,122,1.00);
+}
+#cookie button:hover{
+	background-color: black;
+	color: white;
+}
