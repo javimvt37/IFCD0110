@@ -32,9 +32,9 @@ form{
 }
 .formulario{
 	border: 1px solid grey;
-	position: relative;
-	width: 350px;
 	margin: auto;
+	position: relative;
+	width: 100%;
 	background-color: rgba(255,255,255,1.00);
 	
 }
@@ -91,29 +91,29 @@ a{
 }
 #contenedor{
 	position: fixed;
-	top: 4%;
-	left: 37%;
+	width: 60%;
+	top: 5%;
+	left: 20%;
 	z-index: 100;
 	display: none;
 	border: 10px solid gray;
-		-webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+	overflow: auto;
+	-webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: example2;
   animation-duration: 4s;
 	
 }
 @keyframes example2{
-	0%{left: 37%;top: 1000px;}
-	50%{left: 37%;top: 1000px;}
-	75%{left: 37%; top: 4%;rotate(-20deg);}
-	100%{left:37%;top: 4%;rotate(20deg);}
+	0%{left: 20%;top: 1000px;}
+	50%{left: 20%;top: 1000px;}
+	75%{left: 20%; top: 5%;}
+	100%{left:20%;top: 5%;}
 }
 @-webkit-keyframes example{
 	0%{left: 37%;top: 1000px;}
 	50%{left: 37%;top: 1000px;}
 	100%{left: 37%; top: 4%;}
-#divvpin{
-	display: none;
 }
 #verpin{
 	cursor: pointer;
@@ -121,3 +121,4 @@ a{
 #loguin{
 	cursor: pointer;
 }
+	

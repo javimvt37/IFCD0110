@@ -45,8 +45,10 @@ function logueado(){
 	if((usuario=="")||(usuario==" ")||(contrasena=="")||(contrasena==" ")){
 		document.getElementById("demo").innerHTML="Usuario y contraseña obligatorios";
 	}
-	if(isNaN(contrasena)==true||contrasena.length!=4){
-		alert("La contraseña ha de ser númerico con 4 dígitos");
+	if(contrasena.length!=4){
+		alert("La contraseña ó el usuario ha de contener más o menos caracteres");
+	}else if(isNaN(contrasena)==true){
+		alert("Contraseña incorrecta")
 	}
 }
 function ver(){
@@ -65,9 +67,10 @@ function ver(){
 function recordar(){
 		
 
-		
-		if(document.getElementById("divvpin").style.display="none"){
+		if(document.getElementById("divvpin").style.display=="none"){
 			document.getElementById("divvpin").style.display="block";
+			}else{
+				document.getElementById("divvpin").style.display="none";
 			}
 }
 function validarContrasena(){
