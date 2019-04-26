@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+*{box-sizing:border-box}
+.contenedor_slideshow{
+	max-width: 1000px;
+	margin: auto;
+	position: relative;
+}
+.diapositiva{
+	display: none;
+}
+
+.anterior, .siguiente{
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	position: absolute;
+	top: 50%;
+	margin-top: -22px;
+	padding: 16px;
+	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+} 
+
+.siguiente{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.anterior:hover, .siguiente:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.subtitulo{
+	color: #f2f2f2;
+  	font-size: 15px;
+  	padding: 8px 12px;
+  	position: absolute;
+  	bottom: 8px;
+  	width: 100%;
+  	text-align: center;
+	background-color: rgba(0,0,0,0.18);
+}
+
+.numero{
+	position: absolute;
+	top: 0;
+	color: #f2f2f2;
+  	font-size: 12px;
+ 	padding: 8px 12px;
+}
+
+.punto{
+	cursor: pointer;
+  	height: 15px;
+ 	width: 15px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .punto:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

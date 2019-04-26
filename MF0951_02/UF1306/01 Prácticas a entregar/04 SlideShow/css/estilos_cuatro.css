@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.fichas{
+	overflow: hidden:
+  	border: 1px solid #ccc;
+  	background-color: #f1f1f1;
+}
+.fichas button{
+	 float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.fichas button:hover{
+	background-color: #ddd;
+}
+.fichas button.active{
+	background-color: #ccc;
+}
+.contenidoFicha{
+	display: none;
+}
+
